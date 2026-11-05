@@ -10,12 +10,12 @@
   const ogLocales = { en: 'en_US', es: 'es_ES', pt: 'pt_BR', zh: 'zh_CN', fr: 'fr_FR', ko: 'ko_KR', hi: 'hi_IN' };
   const resumeFiles = {
     en: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
-    es: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
+    es: 'assets/Vinicius-Rodrigues-Resume-ES.pdf',
     pt: 'assets/Vinicius-Rodrigues-Curriculo.pdf',
     zh: 'assets/Vinicius-Rodrigues-Resume-ZH.pdf',
-    fr: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
-    ko: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
-    hi: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
+    fr: 'assets/Vinicius-Rodrigues-Resume-FR.pdf',
+    ko: 'assets/Vinicius-Rodrigues-Resume-KO.pdf',
+    hi: 'assets/Vinicius-Rodrigues-Resume-HI.pdf',
   };
   let currentLanguage = 'en';
   let statusTimer;

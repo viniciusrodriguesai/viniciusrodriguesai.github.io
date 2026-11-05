@@ -1,4 +1,4 @@
-"""Build the four-language dictionary and the English-first HTML fallback.
+"""Build the seven-language dictionary and the English-first HTML fallback.
 
 Run from the repository root after editing localization_rows.json.
 The source list preserves the original Portuguese strings by stable index.
@@ -19,6 +19,18 @@ for index, en, es, zh in rows:
         assert value.strip()
         locales[language][key] = value
 
+extra_rows=json.loads((ROOT/'scripts/localization_extra_rows.json').read_text(encoding='utf-8'))
+for language in ('fr','ko','hi'): locales[language]={}
+for index, fr, ko, hi in extra_rows:
+    key=f't{index:03}'
+    assert key in locales['en'], f'Unknown source key: {key}'
+    for language,value in [('fr',fr),('ko',ko),('hi',hi)]:
+        assert key not in locales[language], f'Duplicate {language} translation: {key}'
+        assert value.strip()
+        locales[language][key]=value
+for language in ('fr','ko','hi'):
+    assert set(locales[language])==set(locales['en']), f'Incomplete {language} translation'
+
 ui = {
  'languageLabel': ['Language', 'Idioma', 'Idioma', '语言'],
  'emailCopied': ['Email copied!', '¡Correo copiado!', 'E-mail copiado!', '邮箱地址已复制！'],
@@ -27,6 +39,29 @@ ui = {
 }
 for key, values in ui.items():
     for language, value in zip(('en', 'es', 'pt', 'zh'), values): locales[language][key] = value
+
+extra_ui={
+ 'fr': {
+  'languageLabel':'Langue',
+  'emailCopied':'Adresse e-mail copiée !',
+  'emailCopiedLabel':'Adresse copiée. Copier à nouveau',
+  'emailCopyError':'Sélectionnez l’adresse pour la copier, ou cliquez dessus pour envoyer un e-mail.'
+ },
+ 'ko': {
+  'languageLabel':'언어',
+  'emailCopied':'이메일 주소를 복사했습니다!',
+  'emailCopiedLabel':'이메일을 복사했습니다. 다시 복사',
+  'emailCopyError':'주소를 선택해 복사하거나 클릭하여 이메일을 보내세요.'
+ },
+ 'hi': {
+  'languageLabel':'भाषा',
+  'emailCopied':'ईमेल पता कॉपी हो गया!',
+  'emailCopiedLabel':'ईमेल पता कॉपी हो गया। फिर से कॉपी करें',
+  'emailCopyError':'पता कॉपी करने के लिए उसे चुनें या ईमेल भेजने के लिए उस पर क्लिक करें।'
+ }
+}
+for language,strings in extra_ui.items(): locales[language].update(strings)
+assert all(set(strings)==set(locales['en']) for strings in locales.values()), 'Locale key mismatch'
 
 # Several strings can share a translation only when they agree in all locales.
 seen = {}
@@ -64,16 +99,23 @@ for element in soup.find_all(True):
             element['data-i18n-'+attribute]=key
 soup.html['lang']='en'
 if not soup.select_one('script[src^="i18n.js"]'):
-    script=soup.new_tag('script',src='i18n.js?v=20261105-resumes',defer='')
+    script=soup.new_tag('script',src='i18n.js?v=20261105-seven-languages',defer='')
     soup.select_one('script[src^="script.js"]').insert_before(script)
-soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261105-resumes'
-soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261105-resumes'
-soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261105-languages'
+soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261105-seven-languages'
+soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261105-seven-languages'
+soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261105-seven-languages'
 if not soup.select_one('meta[property="og:locale"]'):
     soup.head.append(soup.new_tag('meta',attrs={'property':'og:locale','content':'en_US'}))
 if not soup.select_one('#language-select'):
     control=BeautifulSoup('''<label class="language-control"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span class="sr-only">Language</span><select id="language-select" aria-label="Language" data-i18n-skip><option value="en" lang="en" selected>English</option><option value="es" lang="es">Español</option><option value="pt" lang="pt-BR">Português</option><option value="zh" lang="zh-Hans">简体中文</option></select></label>''','html.parser')
     soup.select_one('.nav-links').append(control.label)
+selector=soup.select_one('#language-select')
+selector.clear()
+for code,html_language,label in [('en','en','English'),('es','es','Español'),('pt','pt-BR','Português'),('fr','fr','Français'),('zh','zh-Hans','简体中文'),('ko','ko','한국어'),('hi','hi','हिन्दी')]:
+    option=soup.new_tag('option',value=code,lang=html_language)
+    option.string=label
+    if code=='en': option['selected']=''
+    selector.append(option)
 soup.select_one('.evidence-quote blockquote')['lang']='en'
 soup.select_one('.evidence-quote blockquote')['data-i18n-skip']=''
 for link in soup.select('a[download][href^="assets/Vinicius-Rodrigues"]'):
@@ -83,4 +125,4 @@ for link in soup.select('a[download][href^="assets/Vinicius-Rodrigues"]'):
     link['hreflang']='en'
     link['type']='application/pdf'
 (ROOT/'index.html').write_text(str(soup).rstrip()+'\n',encoding='utf-8',newline='\n')
-print(f'Built {len(rows)} content translations plus {len(ui)} interface strings in four languages.')
+print(f'Built {len(rows)} content translations plus {len(ui)} interface strings in {len(locales)} languages.')

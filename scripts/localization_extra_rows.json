@@ -145,5 +145,9 @@
  [197,"ROC-AUC sur le test UCI : référence aléatoire 0,5000 ; régression logistique 0,7174 ; arbre 0,7581 ; MLP 0,7757.","UCI 테스트 ROC-AUC: 무작위 기준 0.5000, 로지스틱 회귀 0.7174, 트리 0.7581, MLP 0.7757.","UCI टेस्ट पर ROC-AUC: यादृच्छिक आधार 0.5000; लॉजिस्टिक रिग्रेशन 0.7174; ट्री 0.7581; MLP 0.7757।"],
  [198,"Envoyer un e-mail à Vinicius Rodrigues","Vinicius Rodrigues에게 이메일 보내기","Vinicius Rodrigues को ईमेल भेजें"],
  [199,"Copier l’adresse e-mail","이메일 주소 복사","ईमेल पता कॉपी करें"],
- [200,"Retour en haut","맨 위로","ऊपर जाएँ"]
+ [200,"Retour en haut","맨 위로","ऊपर जाएँ"],
+ [201,"Mon côté technique","기술 이야기","तकनीकी पक्ष"],
+ [202,"Pendant mon temps libre","여가 시간에는","मेरे खाली समय में"],
+ [203,"J’adore le football : regarder les matchs et en parler. J’aime aussi suivre d’autres sports.","축구를 정말 좋아해서 경기를 보고 축구 이야기를 나누는 걸 즐깁니다. 다른 스포츠도 즐겨 봅니다.","मुझे फ़ुटबॉल बहुत पसंद है: मैच देखना और उसके बारे में बातें करना। मुझे दूसरे खेल देखना भी अच्छा लगता है।"],
+ [204,"J’essaie de garder la forme, j’adore les sucreries et j’aime beaucoup rencontrer des personnes d’autres pays.","건강하게 지내려고 노력하면서도 단 음식을 정말 좋아합니다. 다른 나라에서 온 사람들을 만나는 것도 무척 즐깁니다.","मैं फ़िट रहने की कोशिश करता हूँ, मुझे मिठाइयाँ बहुत पसंद हैं और दूसरे देशों के लोगों से मिलना बहुत अच्छा लगता है।"]
 ]

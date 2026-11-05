@@ -1,0 +1,76 @@
+{
+  "en": {
+    "filename": "Vinicius-Rodrigues-Resume-EN.pdf",
+    "pdf_title": "Vinicius Rodrigues - Resume",
+    "role": "SOFTWARE DEVELOPMENT | DATA & ARTIFICIAL INTELLIGENCE",
+    "location": "João Pessoa, Brazil",
+    "portfolio": "Portfolio",
+    "headings": ["PROFILE", "SELECTED PROJECTS", "UNIVERSITY OUTREACH EXPERIENCE", "EDUCATION", "TECHNOLOGIES"],
+    "profile": "Data Science and Artificial Intelligence student at UFPB, seeking an internship in software development, data or AI. I build Python applications and React interfaces with APIs, persistent storage and model evaluation. I use AI-assisted development with code review and checks appropriate to each project.",
+    "code": "Code",
+    "projects": [
+      {
+        "title": "Creator Growth Feedback Loop",
+        "stack": "FastAPI · React / TypeScript · PostgreSQL · YouTube Data API",
+        "description": "An application that imports public YouTube metrics, updates a dashboard and suggests the next content experiment. I built the flow from imports to the interface and manually checked metrics and recommendations using 15 videos. Suggestions describe observed associations; causality has not been demonstrated.",
+        "url": "https://github.com/viniciusrodriguesai/creator-growth-feedback-loop"
+      },
+      {
+        "title": "Resume Match AI",
+        "stack": "Python · FastAPI · Streamlit · Information retrieval",
+        "description": "An eight-stage workflow connecting job requirements to evidence in a résumé. I compared lexical search and optional models across 36 internal synthetic cases: identical labels, with higher CPU latency for the models. Lexical search is the default; this evaluation does not establish quality in real hiring processes.",
+        "url": "https://github.com/viniciusrodriguesai/resume-agent-system"
+      },
+      {
+        "title": "Credit Risk Classification",
+        "stack": "Python · scikit-learn · Neural networks · Collaborative project",
+        "description": "A study developed with Gustavo Pereira, comparing models on Home Credit and recording a separate replication on UCI. The validation-selected MLP achieved 0.7757 ROC-AUC on 4,377 test records, versus 0.7174 for logistic regression. Probabilities are not calibrated; no production deployment is claimed.",
+        "url": "https://github.com/viniciusrodriguesai/credit-risk-classification"
+      }
+    ],
+    "experience_title": "PET-Saúde Digital | UFPB / SES-PB",
+    "experience_meta": "August 2025 - present · Volunteer · 4 hours/week during the semester",
+    "experience": "Reviewing TAÍS health-assistant responses against protocols, contributing to the knowledge base and revising prompts with the team. My contribution focuses on evaluation and content, without writing code for TAÍS.",
+    "degree": "B.Sc. in Data Science and Artificial Intelligence",
+    "education": "Federal University of Paraíba · expected graduation: July 2028.",
+    "technologies": "Python, SQL, JavaScript / TypeScript, FastAPI, React, PostgreSQL, scikit-learn, Git and Docker. English: technical reading, work messages and prepared spoken updates.",
+    "footer": "viniciusrodriguesai.github.io · Updated November 2026"
+  },
+  "zh": {
+    "filename": "Vinicius-Rodrigues-Resume-ZH.pdf",
+    "pdf_title": "Vinicius Rodrigues - 简历",
+    "role": "软件开发 | 数据与人工智能",
+    "location": "巴西若昂佩索阿",
+    "portfolio": "作品集",
+    "headings": ["个人简介", "精选项目", "大学社会服务项目经历", "教育背景", "技术技能"],
+    "profile": "就读于巴西帕拉伊巴联邦大学（UFPB），学习数据科学与人工智能，正在寻找软件开发、数据或人工智能领域的实习机会。开发 Python 应用和 React 界面，涉及 API、数据持久化和模型评估。使用人工智能辅助开发，并根据项目需要进行代码审查与验证。",
+    "code": "源代码",
+    "projects": [
+      {
+        "title": "Creator Growth Feedback Loop",
+        "stack": "FastAPI · React / TypeScript · PostgreSQL · YouTube Data API",
+        "description": "该应用导入 YouTube 公开指标，更新仪表板并建议下一次内容实验。我开发了从数据导入到界面的流程，并使用 15 个视频手动检查指标与建议。这些建议描述的是观测到的关联，尚未证明因果关系。",
+        "url": "https://github.com/viniciusrodriguesai/creator-growth-feedback-loop"
+      },
+      {
+        "title": "Resume Match AI",
+        "stack": "Python · FastAPI · Streamlit · 信息检索",
+        "description": "通过八阶段流程，将职位要求与简历中的证据关联起来。我在 36 个内部合成案例中比较了词法检索和可选模型：标签结果相同，但模型增加了 CPU 延迟。默认使用词法检索；该评估不能证明其在真实招聘流程中的质量。",
+        "url": "https://github.com/viniciusrodriguesai/resume-agent-system"
+      },
+      {
+        "title": "信用风险分类",
+        "stack": "Python · scikit-learn · 神经网络 · 合作项目",
+        "description": "与 Gustavo Pereira 合作开展的研究，在 Home Credit 数据集上比较模型，并记录了单独的 UCI 复现实验。通过验证集选定的 MLP，在 4,377 条测试记录上取得 0.7757 的 ROC-AUC，逻辑回归为 0.7174。概率尚未校准，也未声称已在生产环境部署。",
+        "url": "https://github.com/viniciusrodriguesai/credit-risk-classification"
+      }
+    ],
+    "experience_title": "PET-Saúde Digital | UFPB / SES-PB",
+    "experience_meta": "2025 年 8 月至今 · 志愿工作 · 学期内每周 4 小时",
+    "experience": "对照规范审核 TAÍS 健康助手的回答，与团队共同完善知识库并修改提示词。贡献主要在评估与内容方面，未参与 TAÍS 的代码开发。",
+    "degree": "数据科学与人工智能学士（在读）",
+    "education": "巴西帕拉伊巴联邦大学 · 预计 2028 年 7 月毕业。",
+    "technologies": "Python、SQL、JavaScript / TypeScript、FastAPI、React、PostgreSQL、scikit-learn、Git 和 Docker。英语：技术文档阅读、工作消息沟通和事先准备的口头进度汇报。",
+    "footer": "viniciusrodriguesai.github.io · 更新于 2026 年 11 月"
+  }
+}

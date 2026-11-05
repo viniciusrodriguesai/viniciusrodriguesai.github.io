@@ -8,6 +8,12 @@
   const storageKey = 'portfolio-language';
   const htmlLanguages = { en: 'en', es: 'es', pt: 'pt-BR', zh: 'zh-Hans' };
   const ogLocales = { en: 'en_US', es: 'es_ES', pt: 'pt_BR', zh: 'zh_CN' };
+  const resumeFiles = {
+    en: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
+    es: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
+    pt: 'assets/Vinicius-Rodrigues-Curriculo.pdf',
+    zh: 'assets/Vinicius-Rodrigues-Resume-ZH.pdf',
+  };
   let currentLanguage = 'en';
   let statusTimer;
 
@@ -83,6 +89,11 @@
     const ogLocale = document.querySelector('meta[property="og:locale"]');
     if (ogLocale) ogLocale.content = ogLocales[locale];
     if (selector) selector.value = locale;
+    document.querySelectorAll('[data-resume-link]').forEach(link => {
+      link.setAttribute('href', resumeFiles[locale]);
+      link.setAttribute('download', resumeFiles[locale].split('/').pop());
+      link.setAttribute('hreflang', locale === 'es' ? 'en' : htmlLanguages[locale]);
+    });
     clearTimeout(statusTimer);
     if (copyStatus) copyStatus.textContent = '';
     if (copyButton) copyButton.setAttribute('aria-label', text.t199);

@@ -64,9 +64,10 @@ for element in soup.find_all(True):
             element['data-i18n-'+attribute]=key
 soup.html['lang']='en'
 if not soup.select_one('script[src^="i18n.js"]'):
-    script=soup.new_tag('script',src='i18n.js?v=20261105-languages',defer='')
+    script=soup.new_tag('script',src='i18n.js?v=20261105-resumes',defer='')
     soup.select_one('script[src^="script.js"]').insert_before(script)
-soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261105-languages'
+soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261105-resumes'
+soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261105-resumes'
 soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261105-languages'
 if not soup.select_one('meta[property="og:locale"]'):
     soup.head.append(soup.new_tag('meta',attrs={'property':'og:locale','content':'en_US'}))
@@ -75,5 +76,11 @@ if not soup.select_one('#language-select'):
     soup.select_one('.nav-links').append(control.label)
 soup.select_one('.evidence-quote blockquote')['lang']='en'
 soup.select_one('.evidence-quote blockquote')['data-i18n-skip']=''
+for link in soup.select('a[download][href^="assets/Vinicius-Rodrigues"]'):
+    link['data-resume-link']=''
+    link['href']='assets/Vinicius-Rodrigues-Resume-EN.pdf'
+    link['download']='Vinicius-Rodrigues-Resume-EN.pdf'
+    link['hreflang']='en'
+    link['type']='application/pdf'
 (ROOT/'index.html').write_text(str(soup).rstrip()+'\n',encoding='utf-8',newline='\n')
 print(f'Built {len(rows)} content translations plus {len(ui)} interface strings in four languages.')

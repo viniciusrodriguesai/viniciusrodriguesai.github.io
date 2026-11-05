@@ -1,6 +1,6 @@
 # Vinicius Rodrigues · Portfolio
 
-Personal portfolio in Brazilian Portuguese, built with semantic HTML, CSS and a small JavaScript enhancement. No build step or application dependencies.
+English-first personal portfolio with English, Spanish, Brazilian Portuguese and Simplified Chinese. Built with semantic HTML, CSS and a small JavaScript enhancement. No application dependencies or build step required to serve the site.
 
 **Website:** https://viniciusrodriguesai.github.io/
 
@@ -12,11 +12,20 @@ Run `python -m http.server 4173` from this directory, then open http://localhost
 
 - `index.html`: content, project descriptions, evidence links, contact and metadata.
 - `styles.css`: responsive layout, typography and reduced-motion support.
-- `script.js`: optional email-copy button, with an accessible failure message.
+- `script.js`: language selection, optional preference persistence, localized metadata and accessible email-copy feedback.
+- `i18n.js`: generated dictionaries for all four languages. Translations run locally, without an external translation service.
 - `assets/`: authentic project capture, locally hosted font, curriculum, favicon and social preview.
 - `scripts/create_resume.py`: public-facing curriculum generator; requires ReportLab. Run from the repository root.
 
 Push to `main` to update GitHub Pages. Keep `.nojekyll` in the root.
+
+## Languages
+
+First-time visitors see English. The header selector remembers an explicit choice in local storage when available. Shareable `?lang=en`, `?lang=es`, `?lang=pt` and `?lang=zh` URLs override the saved preference. Changing language preserves the current section and expanded project details. If JavaScript or the dictionary fails to load, the static English content remains available.
+
+To edit translations, update `scripts/localization_rows.json`. Each row contains a stable source index followed by English, Spanish and Simplified Chinese. `scripts/localization_source.json` preserves the Portuguese source. Run `python scripts/build_locales.py` (requires BeautifulSoup4) to regenerate `i18n.js` and synchronize the English HTML fallback. Translation markers preserve the identity of text nodes without replacing links, SVGs or project content.
+
+Recorded source quotations and the authentic screenshot retain their original language. Their captions and accessible descriptions are localized. The downloadable resume remains in Portuguese and its language is stated in the translated download labels.
 
 ## Sources and assets
 

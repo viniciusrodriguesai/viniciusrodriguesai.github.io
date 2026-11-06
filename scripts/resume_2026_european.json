@@ -1,0 +1,50 @@
+{
+ "de": {
+  "role":"SOFTWAREENTWICKLER | BACKEND & FULL STACK","location":"João Pessoa, Brasilien",
+  "availability":"Offen für Praktika und Berufseinstiegsstellen weltweit; Remote-Arbeit aus Brasilien oder Umzug, sofern möglich.",
+  "headings":["BERUFSPROFIL","AUSBILDUNG","TECHNISCHE KENNTNISSE","RELEVANTE ERFAHRUNG","AUSGEWÄHLTE PROJEKTE"],
+  "profile":"Bewerber im Software Engineering, der getestete, sicherheitsbewusste Python-APIs und React/TypeScript-Anwendungen entwickelt. Erfahrung mit praktischer KI-Qualitätsarbeit im öffentlichen Sektor und unabhängig entwickelten End-to-End-Produkten; Interesse an Entwicklungsstellen in Start-ups.",
+  "university":"Bundesuniversität Paraíba (UFPB)","degree":"Bachelorstudium Data Science und künstliche Intelligenz",
+  "skill_labels":["Sprachen","Entwicklung","Qualität / Deployment"],"skill_extra":"Datenmodellierung, Datenbankdesign, Leistungsoptimierung, bereichsübergreifende Zusammenarbeit, verteilte Systeme",
+  "experience_role":"KI-Forschungsmonitor (ehrenamtlich)","present":"heute",
+  "experience_org":"Zusammenarbeit zwischen Universität und Gesundheitsbehörde von Paraíba | Öffentliche Telemedizin",
+  "experience":["Mitwirkung an TAÍS, einem GPT-4.1 Mini/RAG-Assistenten im öffentlichen Telemedizinportal von Paraíba: Bewertung von Antworten anhand offizieller Gesundheitsabläufe und Unterstützung beim Erkennen falscher Hinweise zu Onkologie und Telediagnostik.","Mitentwicklung einer Team-Wissensbasis mit mehr als 26 geprüften Frage-Antwort-Paaren für 7 Versorgungspfade; Unterstützung beim Erkennen falscher Hinweise zu Onkologie und Telediagnostik sowie Mitwirkung daran, das Chat-Widget auf der gesamten Website verfügbar zu machen."],
+  "mock":"mit Mocks getestet",
+  "creator":["Full-Stack-Produkt für YouTube-Creator entwickelt, das öffentliche YouTube-Kennzahlen importiert, Inhalte speichert und interaktive Analysen und Experimentvorschläge ohne Neuladen aktualisiert.","Duplikatprüfungen, API-Validierung, Bereitschaftsprüfungen, Schreiblimits für die Demo und Backend-/Frontend-CI implementiert; der Quellcode enthält eine Render-Demo-URL und ein Demonstrationsvideo."],
+  "church":["Nachvollziehbaren Planungsablauf entworfen und mit 8 synthetischen Freiwilligen getestet, einschließlich einwilligungsbasierter Ausnahmen, Berechtigungen, Wartelisten und automatischer Einladungen.","HMAC-Webhook-Verifizierung, Ereignisdeduplizierung und Hintergrund-Worker implementiert; PostgreSQL-Konkurrenztests validieren idempotente Zusagen. Der reale WhatsApp-Einsatz steht noch aus."],
+  "world":["Vergleiche wirtschaftlicher Indikatoren für bis zu 5 Länder mit sicherem CSV-Export und evaluierten Prognosen entwickelt; robustes Caching, Anfragenbegrenzung und verpflichtende Frontend-/Backend-Tests ergänzt. Nicht öffentlich bereitgestellt."],
+  "resume":["Modulares, datenschutzbewusstes achtstufiges System zum Abgleich von Lebensläufen und Stellen entwickelt, mit erklärbarer Bewertung, Schwärzung personenbezogener Daten, validierten Dokument-Uploads und SQLite-Verlauf; lexikalische Streamlit-Demo auf Render bereitgestellt.","Lexikalischen Abgleich, mehrsprachige Embeddings und Reranking anhand von 36 internen synthetischen Fällen verglichen; eine 6,7- bis 10,7-fach höhere mediane Latenz bei unveränderten Klassifizierungen gemessen."]
+ },
+ "it": {
+  "role":"INGEGNERE SOFTWARE | BACKEND E FULL-STACK","location":"João Pessoa, Brasile",
+  "availability":"Disponibile per tirocini e ruoli di inizio carriera in tutto il mondo; lavoro da remoto dal Brasile o trasferimento quando possibile.",
+  "headings":["PROFILO PROFESSIONALE","FORMAZIONE","COMPETENZE TECNICHE","ESPERIENZA RILEVANTE","PROGETTI SELEZIONATI"],
+  "profile":"Candidato nell’ingegneria software che sviluppa API Python e applicazioni React/TypeScript testate e attente alla sicurezza. Esperienza in attività reali di qualità dell’IA nel settore pubblico e in prodotti indipendenti sviluppati end-to-end; interessato a ruoli di ingegneria nelle startup.",
+  "university":"Università federale di Paraíba (UFPB)","degree":"Laurea in Data Science e intelligenza artificiale",
+  "skill_labels":["Linguaggi","Sviluppo","Qualità / distribuzione"],"skill_extra":"modellazione dei dati, progettazione di database, ottimizzazione delle prestazioni, collaborazione tra team, sistemi distribuiti",
+  "experience_role":"Assistente di ricerca sull’IA (volontario)","present":"presente",
+  "experience_org":"Collaborazione tra università e segreteria sanitaria di Paraíba | Telemedicina pubblica",
+  "experience":["Contributo a TAÍS, assistente GPT-4.1 Mini/RAG nel portale pubblico di telemedicina di Paraíba: valutazione delle risposte rispetto ai flussi sanitari ufficiali e supporto nell’individuazione di indicazioni errate su oncologia e telediagnosi.","Co-sviluppo di una base di conoscenza del team con oltre 26 coppie di domande e risposte curate in 7 percorsi di cura; supporto nell’individuazione di indicazioni errate su oncologia e telediagnosi e partecipazione alla disponibilità del widget di chat in tutto il sito."],
+  "mock":"testata con mock",
+  "creator":["Sviluppo di un prodotto full-stack per creator YouTube che importa metriche pubbliche, archivia contenuti e aggiorna analisi interattive e suggerimenti di esperimenti senza ricaricare la pagina.","Implementazione di controlli sui duplicati, validazione API, controlli di disponibilità, limiti di scrittura per la demo e CI backend/frontend; il codice include l’URL della demo su Render e un video illustrativo."],
+  "church":["Progettazione di un flusso di pianificazione verificabile, testato con 8 volontari sintetici, con eccezioni basate sul consenso, permessi, liste d’attesa e inviti automatici.","Implementazione della verifica HMAC dei webhook, deduplicazione degli eventi e worker in background; i test di concorrenza PostgreSQL verificano l’idempotenza delle accettazioni. Il rilascio reale su WhatsApp è ancora in attesa."],
+  "world":["Sviluppo di confronti di indicatori economici per un massimo di 5 paesi con esportazione CSV sicura e previsioni valutate; aggiunta di cache resiliente, limitazione delle richieste e test frontend/backend obbligatori. Non distribuito pubblicamente."],
+  "resume":["Sviluppo di un sistema modulare in 8 fasi per abbinare curriculum e offerte, attento alla privacy, con punteggio spiegabile, oscuramento dei dati personali, validazione dei documenti caricati e cronologia SQLite; demo lessicale Streamlit distribuita su Render.","Confronto tra ricerca lessicale, embedding multilingue e reranking su 36 casi sintetici interni; latenza mediana da 6,7 a 10,7 volte maggiore con classificazioni invariate."]
+ },
+ "ru": {
+  "role":"ИНЖЕНЕР-ПРОГРАММИСТ | БЭКЕНД И FULL-STACK","location":"Жуан-Песоа, Бразилия",
+  "availability":"Открыт к стажировкам и начальным позициям по всему миру; удалённая работа из Бразилии или переезд при наличии права на него.",
+  "headings":["ПРОФЕССИОНАЛЬНЫЙ ПРОФИЛЬ","ОБРАЗОВАНИЕ","ТЕХНИЧЕСКИЕ НАВЫКИ","СООТВЕТСТВУЮЩИЙ ОПЫТ","ИЗБРАННЫЕ ПРОЕКТЫ"],
+  "profile":"Кандидат на должность инженера-программиста, разрабатывающий протестированные и учитывающие безопасность API на Python и приложения на React/TypeScript. Есть опыт практической работы над качеством ИИ в государственном секторе и самостоятельной разработки продуктов от начала до конца; интересуют инженерные позиции в стартапах.",
+  "university":"Федеральный университет Параибы (UFPB)","degree":"Бакалавриат по науке о данных и искусственному интеллекту",
+  "skill_labels":["Языки","Разработка","Качество / развёртывание"],"skill_extra":"моделирование данных, проектирование баз данных, оптимизация производительности, межфункциональное взаимодействие, распределённые системы",
+  "experience_role":"Ассистент исследования ИИ (волонтёр)","present":"настоящее время",
+  "experience_org":"Сотрудничество университета и департамента здравоохранения Параибы | Государственная телемедицина",
+  "experience":["Участие в работе над TAÍS — ассистентом GPT-4.1 Mini/RAG на государственном портале телемедицины Параибы: оценка ответов по официальным медицинским процессам и помощь в выявлении неверных рекомендаций по онкологии и теледиагностике.","Совместная разработка командной базы знаний с более чем 26 проверенными парами вопросов и ответов по 7 направлениям оказания помощи; помощь в выявлении неверных рекомендаций по онкологии и теледиагностике и участие в обеспечении доступности чат-виджета на всём сайте."],
+  "mock":"протестирован с заглушками",
+  "creator":["Разработал full-stack продукт для авторов YouTube: импорт публичных показателей, хранение контента и обновление интерактивной аналитики и предложений экспериментов без перезагрузки страницы.","Реализовал проверку дубликатов, валидацию API, проверку готовности, ограничения записи в демоверсии и CI бэкенда и фронтенда; исходный код содержит URL демоверсии на Render и видеодемонстрацию."],
+  "church":["Спроектировал поддающийся аудиту процесс составления расписаний, протестированный на 8 синтетических волонтёрах, с исключениями на основе согласия, правами доступа, списками ожидания и автоматическими приглашениями.","Реализовал проверку вебхуков HMAC, дедупликацию событий и фоновые обработчики; тесты конкурентного доступа PostgreSQL проверяют идемпотентность принятия приглашений. Реальное развёртывание в WhatsApp пока не выполнено."],
+  "world":["Разработал сравнение экономических показателей для 5 стран с безопасным экспортом CSV и оценёнными прогнозами; добавил отказоустойчивое кэширование, ограничение запросов и обязательные тесты фронтенда и бэкенда. Публично не развёрнут."],
+  "resume":["Разработал модульную восьмиэтапную систему сопоставления резюме и вакансий с учётом конфиденциальности, объяснимой оценкой, скрытием персональных данных, проверкой загружаемых документов и историей SQLite; развернул лексическую демоверсию Streamlit на Render.","Сравнил лексический поиск, многоязычные эмбеддинги и реранжирование на 36 внутренних синтетических примерах; медианная задержка выросла в 6,7–10,7 раза при неизменных классификациях."]
+ }
+}

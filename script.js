@@ -6,8 +6,8 @@
   const copyButton = document.querySelector('#copy-email');
   const copyStatus = document.querySelector('#copy-status');
   const storageKey = 'portfolio-language';
-  const htmlLanguages = { en: 'en', es: 'es', pt: 'pt-BR', zh: 'zh-Hans', fr: 'fr', ja: 'ja', ko: 'ko', hi: 'hi' };
-  const ogLocales = { en: 'en_US', es: 'es_ES', pt: 'pt_BR', zh: 'zh_CN', fr: 'fr_FR', ja: 'ja_JP', ko: 'ko_KR', hi: 'hi_IN' };
+  const htmlLanguages = { en: 'en', es: 'es', pt: 'pt-BR', zh: 'zh-Hans', fr: 'fr', ja: 'ja', ko: 'ko', hi: 'hi', de: 'de', it: 'it', ru: 'ru' };
+  const ogLocales = { en: 'en_US', es: 'es_ES', pt: 'pt_BR', zh: 'zh_CN', fr: 'fr_FR', ja: 'ja_JP', ko: 'ko_KR', hi: 'hi_IN', de: 'de_DE', it: 'it_IT', ru: 'ru_RU' };
   const resumeFiles = {
     en: 'assets/Vinicius-Rodrigues-Resume-EN.pdf',
     es: 'assets/Vinicius-Rodrigues-Resume-ES.pdf',
@@ -17,6 +17,9 @@
     fr: 'assets/Vinicius-Rodrigues-Resume-FR.pdf',
     ko: 'assets/Vinicius-Rodrigues-Resume-KO.pdf',
     hi: 'assets/Vinicius-Rodrigues-Resume-HI.pdf',
+    de: 'assets/Vinicius-Rodrigues-Resume-DE.pdf',
+    it: 'assets/Vinicius-Rodrigues-Resume-IT.pdf',
+    ru: 'assets/Vinicius-Rodrigues-Resume-RU.pdf',
   };
   let currentLanguage = 'en';
   let statusTimer;
@@ -63,7 +66,7 @@
   function normalizeLanguage(value) {
     if (typeof value !== 'string') return null;
     const code = value.toLowerCase();
-    const aliases = { 'en-us': 'en', 'en-gb': 'en', 'pt-br': 'pt', 'zh-cn': 'zh', 'zh-hans': 'zh', 'fr-fr': 'fr', 'fr-ca': 'fr', 'ja-jp': 'ja', 'ko-kr': 'ko', 'hi-in': 'hi' };
+    const aliases = { 'en-us': 'en', 'en-gb': 'en', 'pt-br': 'pt', 'zh-cn': 'zh', 'zh-hans': 'zh', 'fr-fr': 'fr', 'fr-ca': 'fr', 'ja-jp': 'ja', 'ko-kr': 'ko', 'hi-in': 'hi', 'de-de': 'de', 'it-it': 'it', 'ru-ru': 'ru' };
     const language = aliases[code] || code;
     return Object.hasOwn(htmlLanguages, language) && dictionaries[language] ? language : null;
   }

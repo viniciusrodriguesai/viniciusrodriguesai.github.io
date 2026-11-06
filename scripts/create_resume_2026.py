@@ -22,6 +22,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'scripts/resume_2026_manual.json').read_text(encoding='utf-8'))
+DATA.update(json.loads((ROOT / 'scripts/resume_2026_european.json').read_text(encoding='utf-8')))
 LATIN = Path(__import__('sys').prefix) / 'Lib/site-packages/matplotlib/mpl-data/fonts/ttf'
 pdfmetrics.registerFont(TTFont('Latin', str(LATIN / 'DejaVuSans.ttf')))
 pdfmetrics.registerFont(TTFont('LatinBold', str(LATIN / 'DejaVuSans-Bold.ttf')))
@@ -51,7 +52,7 @@ class HindiParagraph(Paragraph):
         finally:
             self.canv._code.append('EMC')
 
-outputs = {'pt':'Vinicius-Rodrigues-Curriculo.pdf','es':'Vinicius-Rodrigues-Resume-ES.pdf','fr':'Vinicius-Rodrigues-Resume-FR.pdf','zh':'Vinicius-Rodrigues-Resume-ZH.pdf','ja':'Vinicius-Rodrigues-Resume-JA.pdf','ko':'Vinicius-Rodrigues-Resume-KO.pdf','hi':'Vinicius-Rodrigues-Resume-HI.pdf'}
+outputs = {'de':'Vinicius-Rodrigues-Resume-DE.pdf','it':'Vinicius-Rodrigues-Resume-IT.pdf','ru':'Vinicius-Rodrigues-Resume-RU.pdf','pt':'Vinicius-Rodrigues-Curriculo.pdf','es':'Vinicius-Rodrigues-Resume-ES.pdf','fr':'Vinicius-Rodrigues-Resume-FR.pdf','zh':'Vinicius-Rodrigues-Resume-ZH.pdf','ja':'Vinicius-Rodrigues-Resume-JA.pdf','ko':'Vinicius-Rodrigues-Resume-KO.pdf','hi':'Vinicius-Rodrigues-Resume-HI.pdf'}
 fontmap = {'zh':'Chinese','ja':'Japanese','ko':'Korean','hi':'Hindi'}
 project_urls = [
  ('Creator Growth Feedback Loop','creator-growth-feedback-loop.onrender.com','https://github.com/viniciusrodriguesai/creator-growth-feedback-loop','2026'),
@@ -86,7 +87,7 @@ def make(lang, scale, filename):
     story += heading(data['headings'][2]) + [
       p('<b>'+escape(labels[0])+':</b> Python, TypeScript, JavaScript, SQL, C++, '+escape(data['skill_extra'])),
       p('<b>'+escape(labels[1])+':</b> FastAPI, React, Pydantic, REST APIs, PostgreSQL, MySQL, SQLAlchemy, SQLite'),
-      p('<b>'+escape(labels[2])+':</b> Docker, GitHub Actions, Pytest, Vitest, nginx, HMAC, '+escape({'pt':'idempotência','es':'idempotencia','fr':'idempotence','zh':'幂等性','ja':'冪等性','ko':'멱등성','hi':'आइडेम्पोटेंसी'}[lang])+', CI/CD')]
+      p('<b>'+escape(labels[2])+':</b> Docker, GitHub Actions, Pytest, Vitest, nginx, HMAC, '+escape({'pt':'idempotência','es':'idempotencia','fr':'idempotence','zh':'幂等性','ja':'冪等性','ko':'멱등성','hi':'आइडेम्पोटेंसी','de':'Idempotenz','it':'idempotenza','ru':'идемпотентность'}[lang])+', CI/CD')]
     story += heading(data['headings'][3]) + [p('<b>PET-Saúde Digital, UFPB / SES-PB | '+escape(data['experience_role'])+' | 2025 - '+escape(data['present'])+'</b>',project),p(escape(data['experience_org']))]
     story += [bullet(x) for x in data['experience']]
     story += heading(data['headings'][4])
@@ -98,7 +99,11 @@ def make(lang, scale, filename):
         story += [bullet(x) for x in data[key]]
     SimpleDocTemplate(str(filename),pagesize=letter,leftMargin=36,rightMargin=36,topMargin=26,bottomMargin=26,title='Vinicius Rodrigues - Resume',author='Vinicius Rodrigues').build(story)
 
+import sys
+requested = set(sys.argv[1:]) or set(outputs)
+assert requested <= set(outputs), 'Unknown language'
 for lang, name in outputs.items():
+    if lang not in requested: continue
     path = ROOT/'assets'/name
     for scale in [1.20, 1.15, 1.10, 1.05, 1, .95, .90, .85, .80]:
         make(lang,scale,path)

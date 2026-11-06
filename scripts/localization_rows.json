@@ -48,7 +48,7 @@
  [76,"I manually checked the dashboard and recommendations using 15 videos. The repository also contains backend and frontend tests and continuous integration configuration.","Comprobé manualmente el dashboard y las recomendaciones con 15 vídeos. El repositorio también incluye pruebas de backend y frontend y configuración de integración continua.","我使用 15 个视频手动检查了仪表板及建议。代码仓库中也包含后端和前端测试，以及持续集成配置。"],
  [77,"What the results support","Qué permiten afirmar los resultados","结果能够说明什么"],
  [78,"Recommendations rely on observed associations. The project does not demonstrate that following a suggestion causes audience growth.","Las recomendaciones se basan en asociaciones observadas. El proyecto no demuestra que seguir una sugerencia cause un aumento de audiencia.","建议基于观测到的关联。该项目尚未证明遵循建议会导致观众数量增长。"],
- [79,"Watch the walkthrough ↗","Ver demostración en vídeo ↗","观看演示视频 ↗"],
+ [79,"Watch the product demo","Ver demostración del producto","观看产品演示"],
  [80,"02 / APPLIED AI & EVALUATION","02 / IA APLICADA Y EVALUACIÓN","02 / 应用人工智能与评估"],
  [81,"RESUME MATCH / EVIDENCE","RESUME MATCH / EVIDENCIAS","RESUME MATCH / 证据"],
  [82,"Diagram","Esquema","示意图"],
@@ -150,5 +150,7 @@
  [202,"In my free time","En mi tiempo libre","我的空闲时间"],
  [203,"I support Vasco and Botafogo-PB — and suffer with both, while waiting for Botafogo-PB to get out of Série C and into Série B. I love watching matches, talking football and following basketball too.","Soy hincha del Vasco y del Botafogo de Paraíba: sufro por los dos y espero que Botafogo-PB salga de la Série C y ascienda a la Série B. Me encanta ver partidos, hablar de fútbol y seguir el baloncesto.","我是 Vasco 和 Botafogo-PB 的球迷，常常为两队揪心，也一直盼着 Botafogo-PB 走出巴西丙级联赛、升入乙级联赛。我爱看足球比赛、聊足球，也喜欢看篮球。"],
  [204,"I go to the gym and try to go swimming when I can. I love anything sweet. I also enjoy meeting people from other countries, hearing their stories, learning about their cultures, making friends and practising languages.","Voy al gimnasio e intento nadar cuando puedo. Me gusta todo lo dulce. También disfruto conocer a personas de otros países, escuchar sus historias, aprender sobre sus culturas, hacer amistades y practicar idiomas.","我会去健身房，有空时也尽量去游泳。各种甜食我都喜欢。我也喜欢认识来自其他国家的人，听他们的故事，了解不同文化，交朋友，以及练习外语。"],
- [205,"I also love FIFA, now EA SPORTS FC, especially Career Mode. I enjoy football manager games, city builders and other management games.","También me encanta FIFA, ahora EA SPORTS FC, sobre todo el modo Carrera. Me gustan los juegos de entrenador de fútbol, los de construcción de ciudades y otros juegos de gestión.","我也很喜欢 FIFA（现在的 EA SPORTS FC），尤其喜欢生涯模式。我还喜欢足球经理类、城市建造类以及其他经营管理类游戏。"]
+ [205,"I also love FIFA, now EA SPORTS FC, especially Career Mode. I enjoy football manager games, city builders and other management games.","También me encanta FIFA, ahora EA SPORTS FC, sobre todo el modo Carrera. Me gustan los juegos de entrenador de fútbol, los de construcción de ciudades y otros juegos de gestión.","我也很喜欢 FIFA（现在的 EA SPORTS FC），尤其喜欢生涯模式。我还喜欢足球经理类、城市建造类以及其他经营管理类游戏。"],
+ [206,"1 min 29 sec · screen recording","1 min 29 s · grabación de pantalla","1 分 29 秒 · 屏幕录制"],
+ [207,"Screen recording of the dashboard, experiment suggestion and import of a public YouTube video.","Grabación de pantalla del panel, la sugerencia de experimento y la importación de un vídeo público de YouTube.","屏幕录制展示了仪表板、下一步实验建议，以及导入一段公开视频的过程。"]
 ]

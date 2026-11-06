@@ -31,6 +31,7 @@ Recorded source quotations and the authentic screenshot retain their original la
 ## Sources and assets
 
 - Creator Growth screenshot: `docs/images/next-experiment.png` from [the project](https://github.com/viniciusrodriguesai/creator-growth-feedback-loop). Figures shown belong to analyzed public videos, not growth caused by this product.
+- Creator Growth walkthrough: user-provided screen recording, compressed to H.264/AAC MP4 at 15 fps without reducing the frame dimensions. The player loads the video only when opened.
 - Resume Match schematic: the fictional Alex Example resume and [documented demonstration](https://github.com/viniciusrodriguesai/resume-agent-system/blob/main/docs/DEMO.md). Labeled as a diagram, not a screenshot.
 - Credit chart: exact ROC-AUC values from [UCI_RESULTS.md](https://github.com/viniciusrodriguesai/credit-risk-classification/blob/main/docs/UCI_RESULTS.md). UCI replication and Home Credit study are distinct.
 - Manrope: locally hosted variable font, distributed under the included SIL Open Font License in `assets/Manrope-OFL.txt`.

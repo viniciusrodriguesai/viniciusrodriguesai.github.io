@@ -56,4 +56,12 @@ html[lang="hi"] .benchmark-row{grid-template-columns:70px 1fr 49px}
 .about-leisure>p{font-size:14px;line-height:1.95;color:#53634a}
 .about-leisure>p+p{margin-top:13px}
 @media(max-width:680px){.about-subheading{font-size:10px;margin-bottom:15px}.about-technical>.text-link{font-size:12px}.experience h4{font-size:17px}.about-leisure{margin-top:28px;padding-top:23px}.about-leisure>p{font-size:14px}}
+.project-video-details{margin-top:26px}
+.project-video-details+.case-details{margin-top:0;border-top:0}
+.project-video-details summary{min-height:52px}
+.project-video-details summary small{display:block;margin:4px 0 0}
+.project-video-details[open] summary{margin-bottom:12px}
+.project-video-details video{display:block;width:100%;height:auto;aspect-ratio:1918/868;background:#173727;border-radius:5px}
+.project-video-details .video-description{font-size:11px;line-height:1.8;color:var(--muted);margin-top:11px}
+.project-video-details .video-youtube{display:inline-block;font-size:11px;text-decoration:underline;text-underline-offset:4px;margin:8px 0 22px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}

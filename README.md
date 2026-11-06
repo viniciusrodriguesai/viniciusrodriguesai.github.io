@@ -36,4 +36,4 @@ Recorded source quotations and the authentic screenshot retain their original la
 - Manrope: locally hosted variable font, distributed under the included SIL Open Font License in `assets/Manrope-OFL.txt`.
 - Favicon and social preview: original typographic artwork.
 
-No analytics, cookies, external font requests or contact-form backend. GitHub Pages hosting has its own operational logging.
+[Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/about/) collects page views and visits through a browser beacon without analytics cookies. There are no external font requests or contact-form backend. GitHub Pages hosting has its own operational logging.

@@ -5,6 +5,7 @@
   const selector = document.querySelector('#language-select');
   const copyButton = document.querySelector('#copy-email');
   const copyStatus = document.querySelector('#copy-status');
+  const exampleQuote = document.querySelector('.evidence-quote blockquote');
   const storageKey = 'portfolio-language';
   const htmlLanguages = { en: 'en', es: 'es', pt: 'pt-BR', zh: 'zh-Hans', fr: 'fr', ja: 'ja', ko: 'ko', hi: 'hi', de: 'de', it: 'it', ru: 'ru' };
   const ogLocales = { en: 'en_US', es: 'es_ES', pt: 'pt_BR', zh: 'zh_CN', fr: 'fr_FR', ja: 'ja_JP', ko: 'ko_KR', hi: 'hi_IN', de: 'de_DE', it: 'it_IT', ru: 'ru_RU' };
@@ -92,6 +93,13 @@
       binding.element.setAttribute(binding.attribute, text[binding.key]);
     });
     document.documentElement.lang = htmlLanguages[locale];
+    if (exampleQuote) {
+      const [before, after] = text.quoteExample.split('{skills}');
+      const highlight = document.createElement('mark');
+      highlight.textContent = text.quoteSkills;
+      exampleQuote.replaceChildren(document.createTextNode(before), highlight, document.createTextNode(after));
+      exampleQuote.lang = htmlLanguages[locale];
+    }
     document.title = text.t000;
     const ogLocale = document.querySelector('meta[property="og:locale"]');
     if (ogLocale) ogLocale.content = ogLocales[locale];

@@ -160,7 +160,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Language",
     "emailCopied": "Email copied!",
     "emailCopiedLabel": "Email copied. Copy again",
-    "emailCopyError": "Select the address to copy it, or click it to send an email."
+    "emailCopyError": "Select the address to copy it, or click it to send an email.",
+    "quoteExample": "“Developed a clinic management system using {skills}.”",
+    "quoteSkills": "Python and SQL"
   },
   "es": {
     "t000": "Vinicius Rodrigues · Software, datos e IA",
@@ -322,7 +324,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Idioma",
     "emailCopied": "¡Correo copiado!",
     "emailCopiedLabel": "Correo copiado. Copiar de nuevo",
-    "emailCopyError": "Selecciona la dirección para copiarla o haz clic para enviar un correo."
+    "emailCopyError": "Selecciona la dirección para copiarla o haz clic para enviar un correo.",
+    "quoteExample": "“Desarrollé un sistema de gestión de una clínica usando {skills}.”",
+    "quoteSkills": "Python y SQL"
   },
   "pt": {
     "t000": "Vinicius Rodrigues · Software, dados & IA",
@@ -484,7 +488,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Idioma",
     "emailCopied": "E-mail copiado!",
     "emailCopiedLabel": "E-mail copiado. Copiar novamente",
-    "emailCopyError": "Selecione o endereço para copiar ou clique nele para enviar um e-mail."
+    "emailCopyError": "Selecione o endereço para copiar ou clique nele para enviar um e-mail.",
+    "quoteExample": "“Desenvolvi um sistema de gerenciamento de clínica usando {skills}.”",
+    "quoteSkills": "Python e SQL"
   },
   "zh": {
     "t000": "Vinicius Rodrigues · 软件、数据与人工智能",
@@ -646,7 +652,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "语言",
     "emailCopied": "邮箱地址已复制！",
     "emailCopiedLabel": "邮箱地址已复制。再次复制",
-    "emailCopyError": "请选择邮箱地址进行复制，或点击地址发送电子邮件。"
+    "emailCopyError": "请选择邮箱地址进行复制，或点击地址发送电子邮件。",
+    "quoteExample": "“使用 {skills} 开发了诊所管理系统。”",
+    "quoteSkills": "Python 和 SQL"
   },
   "fr": {
     "t000": "Vinicius Rodrigues · Logiciels, données et IA",
@@ -808,7 +816,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Langue",
     "emailCopied": "Adresse e-mail copiée !",
     "emailCopiedLabel": "Adresse copiée. Copier à nouveau",
-    "emailCopyError": "Sélectionnez l’adresse pour la copier, ou cliquez dessus pour envoyer un e-mail."
+    "emailCopyError": "Sélectionnez l’adresse pour la copier, ou cliquez dessus pour envoyer un e-mail.",
+    "quoteExample": "« J’ai développé un système de gestion de clinique avec {skills}. »",
+    "quoteSkills": "Python et SQL"
   },
   "ko": {
     "t000": "Vinicius Rodrigues · 소프트웨어, 데이터 및 AI",
@@ -970,7 +980,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "언어",
     "emailCopied": "이메일 주소를 복사했습니다!",
     "emailCopiedLabel": "이메일을 복사했습니다. 다시 복사",
-    "emailCopyError": "주소를 선택해 복사하거나 클릭하여 이메일을 보내세요."
+    "emailCopyError": "주소를 선택해 복사하거나 클릭하여 이메일을 보내세요.",
+    "quoteExample": "“{skills}을 사용해 병원 관리 시스템을 개발했습니다.”",
+    "quoteSkills": "Python과 SQL"
   },
   "hi": {
     "t000": "Vinicius Rodrigues · सॉफ़्टवेयर, डेटा और AI",
@@ -1132,7 +1144,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "भाषा",
     "emailCopied": "ईमेल पता कॉपी हो गया!",
     "emailCopiedLabel": "ईमेल पता कॉपी हो गया। फिर से कॉपी करें",
-    "emailCopyError": "पता कॉपी करने के लिए उसे चुनें या ईमेल भेजने के लिए उस पर क्लिक करें।"
+    "emailCopyError": "पता कॉपी करने के लिए उसे चुनें या ईमेल भेजने के लिए उस पर क्लिक करें।",
+    "quoteExample": "“{skills} का उपयोग करके क्लिनिक प्रबंधन प्रणाली विकसित की।”",
+    "quoteSkills": "Python और SQL"
   },
   "ja": {
     "t000": "Vinicius Rodrigues · ソフトウェア、データ、AI",
@@ -1294,7 +1308,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "言語",
     "emailCopied": "メールアドレスをコピーしました！",
     "emailCopiedLabel": "メールアドレスをコピーしました。もう一度コピー",
-    "emailCopyError": "アドレスを選択してコピーするか、クリックしてメールを送信してください。"
+    "emailCopyError": "アドレスを選択してコピーするか、クリックしてメールを送信してください。",
+    "quoteExample": "「{skills}を使用してクリニック管理システムを開発しました。」",
+    "quoteSkills": "PythonとSQL"
   },
   "de": {
     "t000": "Vinicius Rodrigues · Software, Daten & KI",
@@ -1456,7 +1472,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Sprache",
     "emailCopied": "E-Mail-Adresse kopiert!",
     "emailCopiedLabel": "E-Mail-Adresse kopiert. Erneut kopieren",
-    "emailCopyError": "Adresse zum Kopieren auswählen oder anklicken, um eine E-Mail zu senden."
+    "emailCopyError": "Adresse zum Kopieren auswählen oder anklicken, um eine E-Mail zu senden.",
+    "quoteExample": "„Ich habe ein Klinikverwaltungssystem mit {skills} entwickelt.“",
+    "quoteSkills": "Python und SQL"
   },
   "it": {
     "t000": "Vinicius Rodrigues · Software, dati e IA",
@@ -1618,7 +1636,9 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Lingua",
     "emailCopied": "Indirizzo email copiato!",
     "emailCopiedLabel": "Indirizzo copiato. Copia di nuovo",
-    "emailCopyError": "Seleziona l’indirizzo per copiarlo oppure cliccaci per inviare un’email."
+    "emailCopyError": "Seleziona l’indirizzo per copiarlo oppure cliccaci per inviare un’email.",
+    "quoteExample": "«Ho sviluppato un sistema di gestione per una clinica usando {skills}.»",
+    "quoteSkills": "Python e SQL"
   },
   "ru": {
     "t000": "Vinicius Rodrigues · ПО, данные и ИИ",
@@ -1780,6 +1800,8 @@ window.PORTFOLIO_TRANSLATIONS = {
     "languageLabel": "Язык",
     "emailCopied": "Адрес электронной почты скопирован!",
     "emailCopiedLabel": "Адрес скопирован. Скопировать снова",
-    "emailCopyError": "Выделите адрес для копирования или нажмите на него, чтобы отправить письмо."
+    "emailCopyError": "Выделите адрес для копирования или нажмите на него, чтобы отправить письмо.",
+    "quoteExample": "«Разработал систему управления клиникой с использованием {skills}.»",
+    "quoteSkills": "Python и SQL"
   }
 };

@@ -81,6 +81,25 @@ extra_ui={
  }
 }
 for language,strings in extra_ui.items(): locales[language].update(strings)
+
+# Translate the fictional résumé excerpt while keeping its skill phrase highlighted.
+quote = {
+ 'en': ('“Developed a clinic management system using {skills}.”', 'Python and SQL'),
+ 'pt': ('“Desenvolvi um sistema de gerenciamento de clínica usando {skills}.”', 'Python e SQL'),
+ 'es': ('“Desarrollé un sistema de gestión de una clínica usando {skills}.”', 'Python y SQL'),
+ 'fr': ('« J’ai développé un système de gestion de clinique avec {skills}. »', 'Python et SQL'),
+ 'de': ('„Ich habe ein Klinikverwaltungssystem mit {skills} entwickelt.“', 'Python und SQL'),
+ 'it': ('«Ho sviluppato un sistema di gestione per una clinica usando {skills}.»', 'Python e SQL'),
+ 'ru': ('«Разработал систему управления клиникой с использованием {skills}.»', 'Python и SQL'),
+ 'zh': ('“使用 {skills} 开发了诊所管理系统。”', 'Python 和 SQL'),
+ 'ja': ('「{skills}を使用してクリニック管理システムを開発しました。」', 'PythonとSQL'),
+ 'ko': ('“{skills}을 사용해 병원 관리 시스템을 개발했습니다.”', 'Python과 SQL'),
+ 'hi': ('“{skills} का उपयोग करके क्लिनिक प्रबंधन प्रणाली विकसित की।”', 'Python और SQL'),
+}
+assert set(quote) == set(locales), 'Missing quote translation'
+for language, (template, skills) in quote.items():
+    assert template.count('{skills}') == 1 and skills.strip()
+    locales[language].update(quoteExample=template, quoteSkills=skills)
 assert all(set(strings)==set(locales['en']) for strings in locales.values()), 'Locale key mismatch'
 
 # Several strings can share a translation only when they agree in all locales.
@@ -121,9 +140,9 @@ soup.html['lang']='en'
 if not soup.select_one('script[src^="i18n.js"]'):
     script=soup.new_tag('script',src='i18n.js?v=20261105-about-me',defer='')
     soup.select_one('script[src^="script.js"]').insert_before(script)
-soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261106-europe'
-soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261106-europe'
-soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261106-europe'
+soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261106-quote'
+soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261106-quote'
+soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261106-quote'
 if not soup.select_one('meta[property="og:locale"]'):
     soup.head.append(soup.new_tag('meta',attrs={'property':'og:locale','content':'en_US'}))
 if not soup.select_one('#language-select'):

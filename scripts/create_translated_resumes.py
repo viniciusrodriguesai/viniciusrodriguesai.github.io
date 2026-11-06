@@ -1,8 +1,9 @@
-"""Generate the six translated public portfolio resumes (or selected locales).
+"""Generate the seven translated public portfolio resumes (or selected locales).
 
 Requires ReportLab, DejaVu Sans, and an embeddable Chinese TrueType font.
 On Windows, Microsoft YaHei is embedded as subsets, not copied to the site.
 Korean uses Malgun Gothic; Hindi uses Nirmala UI with HarfBuzz shaping.
+Japanese uses Yu Gothic.
 Example: python scripts/create_translated_resumes.py es fr ko hi
 """
 import argparse
@@ -44,6 +45,10 @@ if 'ko' in languages:
     pdfmetrics.registerFont(TTFont('ResumeKorean','C:/Windows/Fonts/malgun.ttf'))
     pdfmetrics.registerFont(TTFont('ResumeKoreanBold','C:/Windows/Fonts/malgunbd.ttf'))
     pdfmetrics.registerFontFamily('ResumeKorean',normal='ResumeKorean',bold='ResumeKoreanBold',italic='ResumeKorean',boldItalic='ResumeKoreanBold')
+if 'ja' in languages:
+    pdfmetrics.registerFont(TTFont('ResumeJapanese','C:/Windows/Fonts/YuGothR.ttc',subfontIndex=0))
+    pdfmetrics.registerFont(TTFont('ResumeJapaneseBold','C:/Windows/Fonts/YuGothB.ttc',subfontIndex=0))
+    pdfmetrics.registerFontFamily('ResumeJapanese',normal='ResumeJapanese',bold='ResumeJapaneseBold',italic='ResumeJapanese',boldItalic='ResumeJapaneseBold')
 if 'hi' in languages:
     from fontTools.ttLib import TTCollection
     # Extract the selected faces so the shaper and PDF subsetter use the same face.
@@ -79,9 +84,9 @@ class ShapedParagraph(Paragraph):
 
 for language in languages:
     data=DATA[language]
-    chinese = language == 'zh'
-    asian=language in ('zh','ko','hi')
-    regular,bold={'zh':('ResumeCJK','ResumeCJKBold'),'ko':('ResumeKorean','ResumeKoreanBold'),'hi':('ResumeHindi','ResumeHindiBold')}.get(language,('ResumeLatin','ResumeLatinBold'))
+    chinese = language in ('zh','ja')
+    asian=language in ('zh','ja','ko','hi')
+    regular,bold={'zh':('ResumeCJK','ResumeCJKBold'),'ja':('ResumeJapanese','ResumeJapaneseBold'),'ko':('ResumeKorean','ResumeKoreanBold'),'hi':('ResumeHindi','ResumeHindiBold')}.get(language,('ResumeLatin','ResumeLatinBold'))
     styles = {
       'name': ParagraphStyle('name', fontName='ResumeLatinBold', fontSize=25, leading=31, textColor=INK, spaceAfter=6),
       'role': ParagraphStyle('role', fontName=regular, fontSize=11 if asian else 10, leading=17 if asian else 15, textColor=GREEN, spaceAfter=6),

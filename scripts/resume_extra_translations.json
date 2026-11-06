@@ -86,5 +86,27 @@
   "education":"फ़ेडरल यूनिवर्सिटी ऑफ़ पैराइबा · जुलाई 2028 में स्नातक होने की उम्मीद।",
   "technologies":"Python, SQL, JavaScript / TypeScript, FastAPI, React, PostgreSQL, scikit-learn, Git और Docker। अंग्रेज़ी: तकनीकी सामग्री पढ़ना, कार्य-संबंधी संदेश और पहले से तैयार मौखिक प्रगति रिपोर्ट।",
   "footer":"viniciusrodriguesai.github.io · नवंबर 2026 में अपडेट किया गया"
+ },
+ "ja": {
+  "filename": "Vinicius-Rodrigues-Resume-JA.pdf",
+  "pdf_title": "Vinicius Rodrigues - 履歴書",
+  "role": "ソフトウェア開発 | データ・人工知能",
+  "location": "ブラジル・ジョアンペソア",
+  "portfolio": "ポートフォリオ",
+  "headings": ["プロフィール", "主なプロジェクト", "大学の地域貢献活動", "学歴", "技術"],
+  "profile": "パライバ連邦大学（UFPB）でデータサイエンスと人工知能を学び、ソフトウェア開発、データ、AI分野のインターンシップを探しています。API、データの永続化、モデル評価を伴うPythonアプリケーションとReactの画面を開発しています。AIを活用して開発し、プロジェクトに応じてコードレビューと検証を行っています。",
+  "code": "コード",
+  "projects": [
+   {"title": "Creator Growth Feedback Loop", "stack": "FastAPI · React / TypeScript · PostgreSQL · YouTube Data API", "description": "公開されているYouTubeの指標を取り込み、ダッシュボードを更新して次のコンテンツ実験を提案するアプリケーションです。データの取り込みから画面まで開発し、15本の動画で指標と提案を手動で確認しました。提案は観察された関連性を示すもので、因果関係は実証していません。", "url": "https://github.com/viniciusrodriguesai/creator-growth-feedback-loop"},
+   {"title": "Resume Match AI", "stack": "Python · FastAPI · Streamlit · 情報検索", "description": "求人要件と履歴書の根拠を結び付ける8段階の処理です。内部で作成した36件の合成ケースで語彙ベースの検索と追加モデルを比較したところ、判定結果は同じでしたが、モデルのCPU処理時間は長くなりました。語彙ベースの検索を標準としています。この評価は実際の採用選考での品質を示しません。", "url": "https://github.com/viniciusrodriguesai/resume-agent-system"},
+   {"title": "信用リスク分類", "stack": "Python · scikit-learn · ニューラルネットワーク · 共同プロジェクト", "description": "Gustavo Pereiraと共同でHome Creditのモデルを比較し、別途UCIデータセットで再現実験を記録しました。検証データで選んだMLPのROC-AUCは、4,377件のテストデータで0.7757、ロジスティック回帰は0.7174でした。確率は校正されておらず、実運用への導入は主張していません。", "url": "https://github.com/viniciusrodriguesai/credit-risk-classification"}
+  ],
+  "experience_title": "PET-Saúde Digital | UFPB / SES-PB",
+  "experience_meta": "2025年8月〜現在 · ボランティア · 学期中は週4時間",
+  "experience": "TAÍS健康アシスタントの回答を指針と照らして確認し、チームとともに知識ベースやプロンプトの改善に取り組んでいます。主に評価とコンテンツを担当し、TAÍSのコードは書いていません。",
+  "degree": "データサイエンスと人工知能の学士課程",
+  "education": "パライバ連邦大学 · 2028年7月卒業予定。",
+  "technologies": "Python、SQL、JavaScript / TypeScript、FastAPI、React、PostgreSQL、scikit-learn、Git、Docker。英語：技術文書の読解、仕事上のメッセージ、準備した口頭での進捗報告。",
+  "footer": "viniciusrodriguesai.github.io · 2026年11月更新"
  }
 }

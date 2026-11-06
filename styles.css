@@ -35,6 +35,10 @@ html[lang="zh-Hans"] .mono,html[lang="zh-Hans"] .tiny-label,html[lang="zh-Hans"]
 @media(max-width:680px){.nav-links{gap:14px}.nav-links .nav-contact{display:none}.language-control{padding-left:12px;gap:5px}.language-control>.icon{width:14px;height:14px}.language-control select{font-size:10px;max-width:105px;min-height:40px;padding-left:6px}.nav-links>a{font-size:10px}html[lang="zh-Hans"] .contact-top h2 .serif{font-size:32px}html[lang="zh-Hans"] .section-heading h2 .serif{font-size:35px}}
 @media(max-width:370px){.nav-links{gap:10px}.language-control{padding-left:8px}.language-control>.icon{display:none}.language-control select{max-width:96px}.nav-links>a{font-size:9px}}
 .language-control select{font-family:Manrope,'Malgun Gothic','Microsoft YaHei','Nirmala UI',sans-serif}
+html[lang="ja"] body{font-family:Manrope,'Yu Gothic','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif;word-break:normal;overflow-wrap:anywhere}
+html[lang="ja"] .serif{font-family:'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif;font-style:normal;letter-spacing:0}
+html[lang="ja"] .hero-role,html[lang="ja"] .project-copy h3,html[lang="ja"] .workbench h2{letter-spacing:0;line-height:1.5}
+html[lang="ja"] .mono,html[lang="ja"] .tiny-label,html[lang="ja"] .eyebrow{letter-spacing:.025em}
 html[lang="ko"] body{font-family:Manrope,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;word-break:keep-all;overflow-wrap:break-word}
 html[lang="ko"] .serif{font-family:'Noto Serif KR',Batang,serif;font-style:normal;letter-spacing:0}
 html[lang="ko"] .project-copy h3,html[lang="ko"] .workbench h2{letter-spacing:0;line-height:1.5}

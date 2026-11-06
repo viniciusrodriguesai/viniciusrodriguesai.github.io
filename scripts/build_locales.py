@@ -1,4 +1,4 @@
-"""Build the seven-language dictionary and the English-first HTML fallback.
+"""Build the eight-language dictionary and the English-first HTML fallback.
 
 Run from the repository root after editing localization_rows.json.
 The source list preserves the original Portuguese strings by stable index.
@@ -31,6 +31,11 @@ for index, fr, ko, hi in extra_rows:
 for language in ('fr','ko','hi'):
     assert set(locales[language])==set(locales['en']), f'Incomplete {language} translation'
 
+japanese=json.loads((ROOT/'scripts/localization_ja.json').read_text(encoding='utf-8'))
+assert set(japanese)=={str(index) for index, *_ in rows}, 'Incomplete Japanese translation'
+locales['ja']={f't{int(index):03}': value for index, value in japanese.items()}
+assert all(value.strip() for value in locales['ja'].values()), 'Blank Japanese translation'
+
 ui = {
  'languageLabel': ['Language', 'Idioma', 'Idioma', '语言'],
  'emailCopied': ['Email copied!', '¡Correo copiado!', 'E-mail copiado!', '邮箱地址已复制！'],
@@ -58,6 +63,12 @@ extra_ui={
   'emailCopied':'ईमेल पता कॉपी हो गया!',
   'emailCopiedLabel':'ईमेल पता कॉपी हो गया। फिर से कॉपी करें',
   'emailCopyError':'पता कॉपी करने के लिए उसे चुनें या ईमेल भेजने के लिए उस पर क्लिक करें।'
+ },
+ 'ja': {
+  'languageLabel':'言語',
+  'emailCopied':'メールアドレスをコピーしました！',
+  'emailCopiedLabel':'メールアドレスをコピーしました。もう一度コピー',
+  'emailCopyError':'アドレスを選択してコピーするか、クリックしてメールを送信してください。'
  }
 }
 for language,strings in extra_ui.items(): locales[language].update(strings)
@@ -101,9 +112,9 @@ soup.html['lang']='en'
 if not soup.select_one('script[src^="i18n.js"]'):
     script=soup.new_tag('script',src='i18n.js?v=20261105-about-me',defer='')
     soup.select_one('script[src^="script.js"]').insert_before(script)
-soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261105-video'
-soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261105-video'
-soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261105-video'
+soup.select_one('script[src^="i18n.js"]')['src']='i18n.js?v=20261106-ja'
+soup.select_one('script[src^="script.js"]')['src']='script.js?v=20261106-ja'
+soup.select_one('link[rel="stylesheet"]')['href']='styles.css?v=20261106-ja'
 if not soup.select_one('meta[property="og:locale"]'):
     soup.head.append(soup.new_tag('meta',attrs={'property':'og:locale','content':'en_US'}))
 if not soup.select_one('#language-select'):
@@ -111,7 +122,7 @@ if not soup.select_one('#language-select'):
     soup.select_one('.nav-links').append(control.label)
 selector=soup.select_one('#language-select')
 selector.clear()
-for code,html_language,label in [('en','en','English'),('es','es','Español'),('pt','pt-BR','Português'),('fr','fr','Français'),('zh','zh-Hans','简体中文'),('ko','ko','한국어'),('hi','hi','हिन्दी')]:
+for code,html_language,label in [('en','en','English'),('es','es','Español'),('pt','pt-BR','Português'),('fr','fr','Français'),('zh','zh-Hans','简体中文'),('ja','ja','日本語'),('ko','ko','한국어'),('hi','hi','हिन्दी')]:
     option=soup.new_tag('option',value=code,lang=html_language)
     option.string=label
     if code=='en': option['selected']=''

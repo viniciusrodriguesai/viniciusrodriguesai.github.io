@@ -94,7 +94,7 @@
     if (ogLocale) ogLocale.content = ogLocales[locale];
     if (selector) selector.value = locale;
     document.querySelectorAll('[data-resume-link]').forEach(link => {
-      link.setAttribute('href', resumeFiles[locale]);
+      link.setAttribute('href', `${resumeFiles[locale]}?v=20261106-resume`);
       link.setAttribute('download', resumeFiles[locale].split('/').pop());
       link.setAttribute('hreflang', resumeFiles[locale] === resumeFiles.en ? 'en' : htmlLanguages[locale]);
     });

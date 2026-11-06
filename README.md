@@ -15,8 +15,7 @@ Run `python -m http.server 4173` from this directory, then open http://localhost
 - `script.js`: language selection, optional preference persistence, localized metadata and accessible email-copy feedback.
 - `i18n.js`: generated dictionaries for all eight languages. Translations run locally, without an external translation service.
 - `assets/`: authentic project capture, locally hosted font, curriculum, favicon and social preview.
-- `scripts/create_resume.py`: public-facing curriculum generator; requires ReportLab. Run from the repository root.
-- `scripts/create_translated_resumes.py`: generates English, Spanish, French, Chinese, Japanese, Korean and Hindi PDFs from `scripts/resume_translations.json` and `scripts/resume_extra_translations.json`. Pass locale codes to regenerate only selected versions, e.g. `python scripts/create_translated_resumes.py ja`. Requires ReportLab, fontTools and DejaVu Sans. Windows defaults to Microsoft YaHei for Chinese, Yu Gothic for Japanese, Malgun Gothic for Korean and Nirmala UI for Hindi. Hindi also requires `uharfbuzz` and ReportLab shaping support; Unicode ActualText spans preserve logical text for compatible PDF readers. Selected font subsets are embedded in each PDF; font files are not published as site assets.
+- `scripts/create_resume_2026.py`: generates the seven translated PDFs from the manually translated text in `scripts/resume_2026_manual.json`. Requires ReportLab, PyMuPDF, fontTools, uharfbuzz and DejaVu Sans; on Windows it uses Microsoft YaHei, Yu Gothic, Malgun Gothic and Nirmala UI for the respective scripts. The English PDF is the supplied original with the phone number removed. The older `create_resume.py` and `create_translated_resumes.py` generate previous versions and should not be used for the current résumé.
 
 Push to `main` to update GitHub Pages. Keep `.nojekyll` in the root.
 
@@ -26,7 +25,7 @@ First-time visitors see English. The header selector remembers an explicit choic
 
 To edit translations, update `scripts/localization_rows.json` (stable source index followed by English, Spanish and Simplified Chinese), `scripts/localization_extra_rows.json` (index followed by French, Korean and Hindi), or `scripts/localization_ja.json` (Japanese keyed by source index). `scripts/localization_source.json` preserves the Portuguese source. Run `python scripts/build_locales.py` (requires BeautifulSoup4) to regenerate `i18n.js` and synchronize the English HTML fallback. The builder rejects incomplete locales. Translation markers preserve the identity of text nodes without replacing links, SVGs or project content.
 
-Recorded source quotations and the authentic screenshot retain their original language. Their captions and accessible descriptions are localized. Every language has its own résumé PDF: English, Spanish, Portuguese, French, Simplified Chinese, Japanese, Korean and Hindi. All three download buttons update their target, filename and document-language hint when the visitor changes language. The static HTML also links to the English PDF, so the default download works without JavaScript. Translations retain the same factual content and English-proficiency description.
+Recorded source quotations and the authentic screenshot retain their original language. Their captions and accessible descriptions are localized. Every language has its own résumé PDF: English, Spanish, Portuguese, French, Simplified Chinese, Japanese, Korean and Hindi. All three download buttons update their target, filename and document-language hint when the visitor changes language. The static HTML also links to the English PDF, so the default download works without JavaScript. The translated résumés follow the supplied English document and omit its phone number.
 
 ## Sources and assets
 

@@ -85,5 +85,9 @@
 "206":["1 Min. 29 Sek. · Bildschirmaufnahme","1 min 29 sec · registrazione schermo","1 мин 29 с · запись экрана"],
 "207":["Bildschirmaufnahme von Dashboard, Experimentvorschlag und Import eines öffentlichen YouTube-Videos.","Registrazione dello schermo con dashboard, suggerimento di esperimento e importazione di un video YouTube pubblico.","Запись экрана с панелью, предложением эксперимента и импортом публичного видео YouTube."],
 "208":["Du möchtest über Technologie oder etwas anderes sprechen? Schreib mir auf X oder Discord.","Vuoi parlare di tecnologia o di altro? Contattami su X o Discord.","Хотите поговорить о технологиях или о чём-то ещё? Напишите мне в X или Discord."],
-"209":["Auf X (Twitter) schreiben ↗","Parliamo su X (Twitter) ↗","Написать в X (Twitter) ↗"]
+"209":["Auf X (Twitter) schreiben ↗","Parliamo su X (Twitter) ↗","Написать в X (Twitter) ↗"],
+  "210": ["Softwareentwicklung.", "Ingegneria del software.", "Программная инженерия."],
+  "211": ["KI und maschinelles Lernen.", "IA e machine learning.", "ИИ и машинное обучение."],
+  "212": ["Genauigkeit", "Accuratezza", "Доля верных ответов"],
+  "213": ["Interne synthetische Fälle", "Casi sintetici interni", "Внутренние синтетические примеры"]
 }

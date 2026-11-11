@@ -154,5 +154,9 @@
  [206,"1 min 29 s · enregistrement d’écran","1분 29초 · 화면 녹화","1 मिनट 29 सेकंड · स्क्रीन रिकॉर्डिंग"],
  [207,"Enregistrement de l’écran montrant le tableau de bord, la suggestion d’expérience et l’importation d’une vidéo YouTube publique.","대시보드, 다음 실험 제안, 공개 YouTube 동영상 가져오기를 보여주는 화면 녹화입니다.","स्क्रीन रिकॉर्डिंग में डैशबोर्ड, अगले प्रयोग का सुझाव और एक सार्वजनिक YouTube वीडियो का आयात दिखाया गया है।"],
   [208, "Envie de parler de technologie ou de tout autre sujet ? Retrouvez-moi sur X ou Discord.", "기술이나 다른 이야기를 나누고 싶다면 X 또는 디스코드에서 연락해 주세요.", "तकनीक या किसी और विषय पर बात करना चाहते हैं? मुझसे X या Discord पर संपर्क करें।"],
-  [209, "Discuter sur X (Twitter) ↗", "X(트위터)에서 대화하기 ↗", "X (Twitter) पर बात करें ↗"]
+  [209, "Discuter sur X (Twitter) ↗", "X(트위터)에서 대화하기 ↗", "X (Twitter) पर बात करें ↗"],
+  [210, "Ingénierie logicielle.", "소프트웨어 엔지니어링.", "सॉफ़्टवेयर इंजीनियरिंग।"],
+  [211, "IA et apprentissage automatique.", "AI와 머신러닝.", "AI और मशीन लर्निंग।"],
+  [212, "Exactitude", "정확도", "सटीकता"],
+  [213, "Cas synthétiques internes", "내부 합성 사례", "आंतरिक सिंथेटिक मामले"]
 ]

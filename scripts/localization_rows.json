@@ -154,5 +154,9 @@
  [206,"1 min 29 sec · screen recording","1 min 29 s · grabación de pantalla","1 分 29 秒 · 屏幕录制"],
  [207,"Screen recording of the dashboard, experiment suggestion and import of a public YouTube video.","Grabación de pantalla del panel, la sugerencia de experimento y la importación de un vídeo público de YouTube.","屏幕录制展示了仪表板、下一步实验建议，以及导入一段公开视频的过程。"],
   [208, "Want to chat about technology or anything else? Find me on X or Discord.", "¿Quieres hablar de tecnología o de cualquier otro tema? Encuéntrame en X o Discord.", "想聊聊科技或其他话题？欢迎通过 X 或 Discord 联系我。"],
-  [209, "Chat on X (Twitter) ↗", "Hablar por X (Twitter) ↗", "在 X（Twitter）上聊天 ↗"]
+  [209, "Chat on X (Twitter) ↗", "Hablar por X (Twitter) ↗", "在 X（Twitter）上聊天 ↗"],
+  [210, "Software engineering.", "Ingeniería de software.", "软件工程。"],
+  [211, "AI & machine learning.", "IA y aprendizaje automático.", "人工智能与机器学习。"],
+  [212, "Accuracy", "Exactitud", "准确率"],
+  [213, "Internal synthetic cases", "Casos sintéticos internos", "内部合成案例"]
 ]

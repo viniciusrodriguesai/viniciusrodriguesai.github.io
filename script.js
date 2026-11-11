@@ -103,7 +103,10 @@
     document.title = text.t000;
     const ogLocale = document.querySelector('meta[property="og:locale"]');
     if (ogLocale) ogLocale.content = ogLocales[locale];
-    if (selector) selector.value = locale;
+    if (selector) {
+      selector.value = locale;
+      selector.setAttribute('aria-label', text.languageLabel);
+    }
     document.querySelectorAll('[data-resume-link]').forEach(link => {
       link.setAttribute('href', `${resumeFiles[locale]}?v=20261106-resume`);
       link.setAttribute('download', resumeFiles[locale].split('/').pop());

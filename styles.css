@@ -87,3 +87,39 @@ html[lang="hi"] .benchmark-row{grid-template-columns:70px 1fr 49px}
   .visual-caption,.visual-footnote,.resume-visual-foot,.case-details summary small{font-size:11px}
 }
 @media(max-width:370px){.hero h1{font-size:clamp(54px,16vw,70px)}}
+
+/* Phase 1: readable type and touch targets, using the existing visual identity. */
+:root{--font-body:Manrope,Arial,sans-serif;--text-body:1rem;--text-small:.875rem;--text-meta:.75rem;--space-reading:1.25rem;--focus-color:#80501d;--evidence-ink:#344a2d;--evidence-rule:#8a9c76}
+html,body{overflow-x:clip}
+body{font-family:var(--font-body);font-size:var(--text-body)}
+a:focus-visible,button:focus-visible,summary:focus-visible,.language-control select:focus-visible{outline:3px solid var(--focus-color);outline-offset:4px}
+.hero-description,.project-copy>p,.about-technical>p:not(.about-intro),.about-leisure>p,.experience p,.contact-bottom p{font-size:var(--text-body);line-height:1.7}
+.hero-description{max-width:32rem}
+.hero-location,.project-topline>.mono,.project-status,.tags li,.project-takeaway .tiny-label,.visual-caption,.visual-footnote,.resume-visual-foot,.case-details summary small,.chart-source,.chart-context,.experience-date,.experience-subtitle,.experience p.experience-note,.education>.tiny-label,.footer-inner{font-size:var(--text-meta);line-height:1.55}
+.nav-links,.language-control select,.button,.text-link,.subtle-link,.project-links .text-link,.social-links a,.case-details summary,.case-grid p,.case-grid h4,.project-question,.project-takeaway p,.education strong,.education div>span,.demo-note{font-size:var(--text-small)!important;line-height:1.6}
+.nav-links>a,.language-control select,.project-links a,.social-links a{min-height:44px;display:inline-flex;align-items:center}
+.workbench-top .mono,.workbench-heading .tiny-label,.flow-step small,.flow-connector>span,.workbench-bottom,.visual-topbar,.resume-visual-head>.mono,.diagram-badge,.evidence-label,.evidence-connection,.evidence-result,.credit-visual-head>.mono,.chart-heading>span,.benchmark-row,.benchmark-row>b{font-size:var(--text-meta);line-height:1.5}
+.flow-step strong,.evidence-row strong{font-size:var(--text-small)}
+.project-copy .project-evidence{font-size:var(--text-small);line-height:1.65;color:var(--evidence-ink);border-left:2px solid var(--evidence-rule);padding-left:1rem;margin-top:var(--space-reading)}
+.project-layout{grid-template-columns:minmax(0,1.21fr) minmax(0,1fr)}
+.project-layout-reverse{grid-template-columns:minmax(0,1fr) minmax(0,1.21fr)}
+.hero h1,.section-heading h2,.about-heading h2,.contact-top h2{min-width:0;overflow-wrap:break-word}
+@media(max-width:900px){.project-layout,.project-layout-reverse{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media(max-width:680px){
+ .nav{min-height:73px;flex-wrap:wrap;gap:0 12px;padding-block:8px}
+ .nav-links{flex:1;justify-content:flex-end;flex-wrap:wrap;gap:0 14px}
+ .nav-links .nav-contact{display:inline-flex}
+ .nav-links>a{font-size:var(--text-small);min-height:44px}
+ .language-control{padding-left:10px}
+ .language-control select{font-size:var(--text-small);max-width:125px;min-height:44px}
+ .hero-description,.project-copy>p,.about-technical>p:not(.about-intro),.about-leisure>p,.experience p,.contact-bottom p{font-size:var(--text-body);line-height:1.7}
+ .project-copy .project-evidence{font-size:var(--text-small)}
+ .hero-actions>.text-link{font-size:var(--text-small);min-height:44px}
+ .project-layout,.project-layout-reverse{display:flex}
+ .project-status,.project-topline>.mono,.tags li,.hero-location,.visual-caption,.visual-footnote,.resume-visual-foot,.case-details summary small{font-size:var(--text-meta)}
+ .contact-invitation a{min-height:44px;display:inline-flex;align-items:center}
+}
+@media(max-width:370px){.nav-links{gap:0 10px}.language-control{padding-left:8px}.language-control select{max-width:112px}.hero h1{font-size:clamp(54px,16vw,70px)}}
+:root{--muted-strong:#4e5c49;--muted-on-paper:#596454}
+.hero-location,.project-status-neutral,.case-details summary small,.more-projects small{color:var(--muted-on-paper)}
+.evidence-label,.resume-visual-foot,.resume-visual-foot a,.about-technical>p:not(.about-intro),.experience p,.experience p.experience-note{color:var(--muted-strong)}

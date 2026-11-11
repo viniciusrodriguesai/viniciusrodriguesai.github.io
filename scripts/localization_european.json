@@ -89,5 +89,10 @@
   "210": ["Softwareentwicklung.", "Ingegneria del software.", "Программная инженерия."],
   "211": ["KI und maschinelles Lernen.", "IA e machine learning.", "ИИ и машинное обучение."],
   "212": ["Genauigkeit", "Accuratezza", "Доля верных ответов"],
-  "213": ["Interne synthetische Fälle", "Casi sintetici interni", "Внутренние синтетические примеры"]
+  "213": ["Interne synthetische Fälle", "Casi sintetici interni", "Внутренние синтетические примеры"],
+  "214": ["Ich bin Vinicius und studiere Data Science und KI an der UFPB.", "Sono Vinicius, studente di Data Science e IA alla UFPB.", "Я Винисиус, студент по направлению науки о данных и ИИ в UFPB."],
+  "215": ["So funktioniert Creator Growth", "Come funziona Creator Growth", "Как работает Creator Growth"],
+  "216": ["Vergleich der Suchverfahren", "Confronto dei metodi di ricerca", "Сравнение методов поиска"],
+  "217": ["Ergebnisse auf dem UCI-Testdatensatz", "Risultati sul test UCI", "Результаты на тестовой выборке UCI"],
+  "218": ["Ich nutze KI-gestützte Entwicklung mit Code-Reviews, Tests und manuellen Prüfungen je nach Projekt.", "Uso lo sviluppo assistito dall’IA con revisione del codice, test e controlli manuali adeguati al progetto.", "Я применяю ИИ при разработке, проверяя код и проводя тесты и ручные проверки по необходимости."]
 }

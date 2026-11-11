@@ -288,3 +288,19 @@ html[lang='hi'] h1,html[lang='hi'] h2,html[lang='hi'] h3,html[lang='hi'] h4{line
 }
 
 video:focus-within{outline:3px solid var(--focus);outline-offset:5px}
+
+/* Hallmark polish: specific personal copy, fewer decorative labels, and a compact experiment record. */
+.opening h1{font-size:clamp(1.9rem,3.3vw,3rem);line-height:1.15;max-width:33ch;font-weight:500;letter-spacing:-.035em}
+.evaluation-numbers{display:block;padding-block:0;border-bottom:0;margin-bottom:var(--space-6)}
+.evaluation-numbers>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-6);align-items:baseline;padding-block:var(--space-4);border-bottom:1px solid var(--rail-line)}
+.evaluation-numbers dt{font-size:var(--body-size);color:var(--experiment-text);margin:0}
+.evaluation-numbers dd{font-size:1.5rem;letter-spacing:-.02em;text-align:right}
+.architecture-title{font-size:1.35rem;line-height:1.25}
+.workbench-heading{grid-row:1}.workbench-bottom{min-height:44px;align-self:start}
+.architecture-link:hover{text-decoration:none}
+.mobile-introduction{border:0;padding-top:0;margin-top:var(--space-3)}
+.contact-address{font-size:clamp(1.5rem,3.3vw,3rem)}
+.email-row .contact-arrow{min-width:44px;min-height:44px;border:0}
+@media(max-width:650px){.opening h1{font-size:clamp(1.8rem,7.8vw,2.5rem);line-height:1.15}.evaluation-numbers dt{font-size:var(--small)}.evaluation-numbers dd{font-size:1.4rem}.contact-address{font-size:clamp(1.25rem,5.7vw,1.8rem)}.email-row{flex-wrap:wrap}.contact-address{flex:1;min-width:0}.mobile-introduction .rail-meta{margin-top:var(--space-3)}}
+.product-premise,.experiment-context,.research-context{grid-template-columns:minmax(0,1fr)}
+.product-premise>p,.experiment-context>p,.research-context>p{max-width:75ch}

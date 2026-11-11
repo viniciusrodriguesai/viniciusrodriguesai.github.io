@@ -158,5 +158,10 @@
   [210, "Ingénierie logicielle.", "소프트웨어 엔지니어링.", "सॉफ़्टवेयर इंजीनियरिंग।"],
   [211, "IA et apprentissage automatique.", "AI와 머신러닝.", "AI और मशीन लर्निंग।"],
   [212, "Exactitude", "정확도", "सटीकता"],
-  [213, "Cas synthétiques internes", "내부 합성 사례", "आंतरिक सिंथेटिक मामले"]
+  [213, "Cas synthétiques internes", "내부 합성 사례", "आंतरिक सिंथेटिक मामले"],
+  [214, "Je m’appelle Vinicius et j’étudie la science des données et l’IA à l’UFPB.", "저는 UFPB에서 데이터 과학과 AI를 공부하는 Vinicius입니다.", "मैं Vinicius हूँ। UFPB में डेटा साइंस और AI पढ़ता हूँ।"],
+  [215, "Comment fonctionne Creator Growth", "Creator Growth의 작동 방식", "Creator Growth कैसे काम करता है"],
+  [216, "Comparaison des méthodes de recherche", "검색 방법 비교", "खोज विधियों की तुलना"],
+  [217, "Résultats sur le jeu de test UCI", "UCI 테스트 결과", "UCI टेस्ट डेटा के परिणाम"],
+  [218, "J’utilise le développement assisté par IA, avec revue de code, tests et vérifications manuelles selon le projet.", "AI 지원 개발을 활용하며 프로젝트에 맞게 코드 검토, 테스트, 수동 확인을 수행합니다.", "मैं AI-सहायता प्राप्त विकास का उपयोग करता हूँ, साथ ही प्रोजेक्ट के अनुसार कोड समीक्षा, टेस्ट और मैन्युअल जाँच करता हूँ।"]
 ]

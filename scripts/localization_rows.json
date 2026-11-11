@@ -158,5 +158,10 @@
   [210, "Software engineering.", "Ingeniería de software.", "软件工程。"],
   [211, "AI & machine learning.", "IA y aprendizaje automático.", "人工智能与机器学习。"],
   [212, "Accuracy", "Exactitud", "准确率"],
-  [213, "Internal synthetic cases", "Casos sintéticos internos", "内部合成案例"]
+  [213, "Internal synthetic cases", "Casos sintéticos internos", "内部合成案例"],
+  [214, "I'm Vinicius, a Data Science and AI student at UFPB.", "Soy Vinicius, estudiante de Ciencia de Datos e IA en la UFPB.", "我是 Vinicius，在 UFPB 学习数据科学与人工智能。"],
+  [215, "How Creator Growth works", "Cómo funciona Creator Growth", "Creator Growth 的工作原理"],
+  [216, "Retrieval method comparison", "Comparación de métodos de búsqueda", "检索方法对比"],
+  [217, "UCI test-set results", "Resultados en el conjunto de prueba UCI", "UCI 测试集结果"],
+  [218, "I use AI-assisted development, with code review, tests and manual checks as appropriate for each project.", "Utilizo desarrollo asistido por IA, con revisión de código, pruebas y comprobaciones manuales según el proyecto.", "我使用人工智能辅助开发，并根据项目需要进行代码审查、测试和手动检查。"]
 ]

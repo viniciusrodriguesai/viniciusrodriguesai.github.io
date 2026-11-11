@@ -72,3 +72,18 @@ html[lang="hi"] .benchmark-row{grid-template-columns:70px 1fr 49px}
 .project-video-details .video-description{font-size:11px;line-height:1.8;color:var(--muted);margin-top:11px}
 .project-video-details .video-youtube{display:inline-block;font-size:11px;text-decoration:underline;text-underline-offset:4px;margin:8px 0 22px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.hero-linkedin{display:inline-flex;align-items:center;gap:7px;min-height:44px;margin-top:12px;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.hero-linkedin .icon{width:14px;height:14px}
+.hero-linkedin:hover{color:#58703c}
+.demo-note{margin:-26px 0 28px;font-size:12px;color:#596451}
+@media(max-width:680px){
+  .nav-links>a,.language-control select{font-size:12px}
+  .nav-links>a{min-height:44px;display:inline-flex;align-items:center}
+  .hero .eyebrow,.hero-location,.project-status,.project-topline>.mono,.tags li{font-size:11px}
+  .hero-actions{flex-wrap:wrap}
+  .hero-actions>.text-link,.social-links a{font-size:13px;min-height:44px}
+  .demo-note{margin:-15px 0 25px;font-size:12px}
+  .visual-caption,.visual-footnote,.resume-visual-foot,.case-details summary small{font-size:11px}
+}
+@media(max-width:370px){.hero h1{font-size:clamp(54px,16vw,70px)}}

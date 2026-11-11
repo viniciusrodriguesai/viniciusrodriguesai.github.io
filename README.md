@@ -12,6 +12,8 @@ Run `python -m http.server 4173` from this directory, then open http://localhost
 
 - `index.html`: content, project descriptions, evidence links, contact and metadata.
 - `styles.css`: responsive layout, typography and reduced-motion support.
+- `tokens.css`: Terrazzo palette, type scale and spacing tokens.
+- `base.css`: shared layout, focus and reduced-motion defaults.
 - `script.js`: language selection, optional preference persistence, localized metadata and accessible email-copy feedback.
 - `i18n.js`: generated dictionaries for all eleven languages. Translations run locally, without an external translation service.
 - `assets/`: authentic project capture, locally hosted font, curriculum, favicon and social preview.
@@ -33,7 +35,7 @@ The fictional résumé excerpt is translated in each language, with its highligh
 - Creator Growth walkthrough: user-provided screen recording, compressed to H.264/AAC MP4 at 15 fps without reducing the frame dimensions. The player loads the video only when opened.
 - Resume Match schematic: the fictional Alex Example resume and [documented demonstration](https://github.com/viniciusrodriguesai/resume-agent-system/blob/main/docs/DEMO.md). Labeled as a diagram, not a screenshot.
 - Credit chart: exact ROC-AUC values from [UCI_RESULTS.md](https://github.com/viniciusrodriguesai/credit-risk-classification/blob/main/docs/UCI_RESULTS.md). UCI replication and Home Credit study are distinct.
-- Manrope: locally hosted variable font, distributed under the included SIL Open Font License in `assets/Manrope-OFL.txt`.
+- Syne and Onest: locally hosted variable fonts from the Google Fonts repository, distributed under the included SIL Open Font Licenses in `assets/syne-OFL.txt` and `assets/onest-OFL.txt`. Previous font assets remain available for existing documents and artwork.
 - Favicon and social preview: original typographic artwork.
 
 [Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/about/) collects page views and visits through a browser beacon without analytics cookies. There are no external font requests or contact-form backend. GitHub Pages hosting has its own operational logging.

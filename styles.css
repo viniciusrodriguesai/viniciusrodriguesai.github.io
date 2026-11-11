@@ -123,3 +123,131 @@ a:focus-visible,button:focus-visible,summary:focus-visible,.language-control sel
 :root{--muted-strong:#4e5c49;--muted-on-paper:#596454}
 .hero-location,.project-status-neutral,.case-details summary small,.more-projects small{color:var(--muted-on-paper)}
 .evidence-label,.resume-visual-foot,.resume-visual-foot a,.about-technical>p:not(.about-intro),.experience p,.experience p.experience-note{color:var(--muted-strong)}
+
+/* Phase 2: project-specific composition, preserving the editorial system. */
+:root {
+  --surface-study: #eeece5;
+  --surface-data: #e9eedf;
+  --rule-strong: #bfc5b4;
+  --on-deep: #f4f5e9;
+  --section-gap: 5rem;
+}
+.eyebrow,.tiny-label,.project-topline>.mono,.project-status,.about-subheading,.visual-topbar,.resume-visual-head>.mono,.credit-visual-head>.mono {
+  font-family:var(--font-body);letter-spacing:0;line-height:1.6;
+}
+.eyebrow,.tiny-label,.about-subheading{font-size:var(--text-meta);text-transform:none}
+.project-topline{margin-bottom:2rem;align-items:baseline}
+.project{padding-top:1.5rem;margin-bottom:var(--section-gap)}
+.project-copy h3{font-size:clamp(1.875rem,3vw,2.75rem);letter-spacing:-.045em;line-height:1.15;overflow-wrap:break-word;min-width:0}
+.project-copy>p{max-width:65ch}
+.tags{gap:.5rem 1rem}
+.tags li{border:0;padding:0;font-family:var(--font-body);color:var(--muted-strong)}
+.project-takeaway{border:0;padding-left:0;margin-top:1.5rem}
+.project-takeaway .tiny-label{font-weight:600;color:var(--green)}
+.project-copy .project-evidence{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:1rem}
+.project-links{gap:1.5rem;flex-wrap:wrap}
+.workbench{box-shadow:none;border-radius:3px}
+.workbench:hover{transform:none}
+.flow-step{border-width:0 0 1px;border-radius:0;background:transparent;padding-inline:0}
+.flow-step-last{background:var(--lime);padding-inline:1rem;border:0}
+.workbench-top{padding-block:1rem}
+.flow-step small,.flow-connector>span{font-family:var(--font-body);letter-spacing:0}
+.section-heading{align-items:flex-end}
+.section-heading h2,.about-heading h2{letter-spacing:-.045em}
+.case-details summary{padding-block:1.25rem}
+.case-details summary:hover{color:var(--green)}
+/* The product: a full-size, authentic capture rather than a simulated window. */
+#creator-growth .project-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 4rem;align-items:start}
+#creator-growth .project-copy{display:contents}
+#creator-growth .project-intro{grid-column:1;grid-row:1;min-width:0}
+#creator-growth .project-proof{grid-column:2;grid-row:1;min-width:0}
+#creator-growth .project-intro>p{font-size:var(--text-body);line-height:1.7;margin-top:1rem;color:var(--muted)}
+#creator-growth .project-takeaway{margin-top:0}
+#creator-growth .creator-visual{grid-column:1/-1;padding:0;background:transparent;border:0;overflow:visible}
+.visual-topbar{padding:0 0 .75rem;font-size:var(--text-meta)}
+.screenshot-link{box-shadow:none;border:1px solid var(--rule-strong);border-radius:2px}
+.screenshot-link:hover{transform:none}
+.visual-caption{margin-top:1rem;flex-wrap:wrap}
+.visual-footnote{max-width:75ch;border:0;margin-top:.5rem;padding:0}
+.project-video-details summary{background:var(--surface-study);padding-inline:1rem}
+/* The experiment: comparison first, followed by its clearly labelled example. */
+.resume-visual{background:var(--surface-study);border:0;border-radius:0;padding:2rem}
+.experiment-summary{border-bottom:1px solid var(--rule-strong);padding-bottom:1.5rem;margin-bottom:1.5rem}
+.experiment-summary h4{font-size:1.5rem;line-height:1.3;letter-spacing:-.025em;font-weight:600}
+.experiment-summary .project-evidence{font-size:var(--text-body);line-height:1.7;color:var(--ink);margin-top:1rem}
+.evidence-row,.evidence-quote{background:transparent;border:0;border-radius:0;padding:0}
+.evidence-quote{border-top:1px solid var(--rule-strong);padding-top:1rem}
+.evidence-quote blockquote{font-size:1.125rem}
+.evidence-result>span{font-size:var(--text-meta);color:var(--muted-strong)}
+.evidence-demo{padding-bottom:1.25rem}
+.diagram-badge{border-radius:2px;white-space:normal}
+/* The study: retain the measured chart and place the validation protocol beside it. */
+.credit-visual{background:var(--surface-data);border:0;border-radius:0;padding:2rem}
+.chart-heading strong{font-size:1.5rem;letter-spacing:-.025em}
+.benchmark-row{grid-template-columns:minmax(65px,1fr) minmax(0,2fr) 4rem;gap:.75rem;margin-top:1.25rem}
+.benchmark-row>b{font-variant-numeric:tabular-nums}
+.benchmark-track{height:1.25rem}
+.chart-context{font-size:var(--text-meta);color:var(--muted-strong)}
+.chart-context strong{font-size:var(--text-small)}
+.chart-source{min-height:44px}
+.method-note{border-top:1px solid var(--rule-strong);margin-top:1rem;padding-top:1rem}
+.method-note p{font-size:var(--text-small);line-height:1.7;color:var(--muted-strong)}
+/* Professional record first; interests remain readable in a separate band. */
+.about-layout{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:3rem 7%}
+.about-stamp{border:0;margin-top:2rem;padding:0}
+.about-stamp svg{display:none}
+.about-stamp>.mono{writing-mode:horizontal-tb;transform:none}
+.about-stamp>span:last-child{font-size:var(--text-meta)}
+.about-subheading{font-weight:600;color:var(--green)}
+.experience,.education{grid-template-columns:minmax(100px,.3fr) minmax(0,1fr);gap:1.5rem}
+.experience h4{font-size:1.25rem}
+.about-leisure{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem 2rem;border-top:1px solid var(--rule-strong);padding-top:2rem;margin-top:0}
+.about-leisure h3{grid-column:1/-1;margin:0}
+.about-leisure>p{font-size:var(--text-small);line-height:1.7;margin:0}
+.contact-top h2{letter-spacing:-.045em}
+.contact-arrow{width:64px;height:64px;border-radius:3px}
+.contact-arrow:hover{transform:none}
+.contact-section :is(a,button):focus-visible,.footer a:focus-visible{outline-color:var(--lime)}
+.contact-invitation{margin-top:2rem;padding-top:1.5rem}
+@media(max-width:900px){
+ .project-layout,.project-layout-reverse{grid-template-columns:minmax(0,1fr);gap:2rem}
+ .project-layout-reverse .project-copy,.project-layout-reverse .project-visual{grid-column:auto;grid-row:auto}
+ .project-layout-reverse .project-copy{order:-1}
+ .about-layout{grid-template-columns:minmax(0,1fr);gap:2rem}
+ .about-leisure{grid-template-columns:minmax(0,1fr)}
+ #creator-growth .project-layout{gap:1.5rem 2rem}
+}
+@media(max-width:680px){
+ .project{margin-bottom:3.5rem}
+ .project-topline{flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+ .project-topline>.mono,.project-status{max-width:100%;font-size:var(--text-meta);text-align:left}
+ .project-layout,.project-layout-reverse{display:flex}
+ #creator-growth .project-layout{display:grid;grid-template-columns:minmax(0,1fr)}
+ #creator-growth .project-intro{grid-column:1;grid-row:1}
+ #creator-growth .creator-visual{grid-column:1;grid-row:2}
+ #creator-growth .project-proof{grid-column:1;grid-row:3}
+ .resume-visual,.credit-visual{padding:1.25rem}
+ .credit-visual-head,.resume-visual-head{flex-wrap:wrap}
+ .resume-visual-head>.mono,.credit-visual-head>.mono,.diagram-badge{font-size:var(--text-meta)}
+ .about-heading{display:block}
+ .about-stamp{display:none}
+ .experience,.education{grid-template-columns:minmax(0,1fr);gap:.5rem}
+ .contact-arrow{position:static;width:44px;height:44px}
+ .contact-top h2,.contact-top h2 .serif{font-size:clamp(1.75rem,7.8vw,3rem)}
+ .contact-top>div{min-width:0}
+ .visual-caption>span:last-child{margin-left:0}
+}
+.result-limit{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--rule-strong)}
+.result-limit h4{font-family:var(--font-body);font-size:var(--text-small);font-weight:600;letter-spacing:0;line-height:1.5;color:var(--green)}
+.result-limit p{font-size:var(--text-small);line-height:1.7;color:var(--muted-strong);margin-top:.5rem}
+.case-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:900px){.project-layout>.project-copy{order:-1}}
+@media(max-width:680px){.case-grid-compact{grid-template-columns:minmax(0,1fr)}}
+:root{--chart-bar:#61764f;--control-border:#7b856e}
+.visual-topbar,.resume-visual-head,.credit-visual-head>.mono,.chart-heading>span,.more-projects>.tiny-label,.about-heading>.eyebrow,.experience-date,.experience-subtitle,.education>.tiny-label,.education div>span,.location-divider{color:var(--muted-strong)}
+.wordmark>span:first-child{color:var(--green)}
+.footer .wordmark>span:first-child{color:var(--lime)}
+.benchmark-track>span{background:var(--chart-bar)}
+.benchmark-selected .benchmark-track>span{background:var(--green)}
+.language-control select{border-color:var(--control-border)}
+@media(min-width:901px){#credit-risk .credit-visual{grid-column:1;grid-row:1}#credit-risk .project-copy{grid-column:2;grid-row:1}}
